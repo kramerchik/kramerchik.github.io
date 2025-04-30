@@ -1,38 +1,28 @@
-﻿[doc][center][img]https://i.imgur.com/ah150GK.png[/img][/center]
-[center]LOS SANTOS COUNTY SHERIFF'S DEPARTMENT
-REPORT A CRIME
+﻿[background=#0F283E][textarea][float=right][image=120]https://www.upload.ee/image/16213436/2344.png[/image][/float][color=white]LSPD
+LSPD[/color]
+[center][size=150][b]ДЕПАРТАМЕНТ ПОЛИЦИИ САН - ФИЕРРО[/b][/size]
+[size=130]Заявление на прохождение курса[/size][/center]
 
-[size=120][b]APPLICATION[/b][/size][/center][borderb=#000][/borderb]
-[justify]Эта форма используется только для подачи заявления о преступлении в юрисдикции Департамета шерифа округа Лос-Сантоса. Департамент шерифа округа Лос-Сантоса не расследует дела, произошедшие за пределами его юрисдикции.[/justify]
-[doc_b=ИНФОРМАЦИЯ О ВАС]
+[hr][/hr]
+[list][border=#0F283E][size=120][b]ИНФОРМАЦИЯ ОБ ОФИЦЕРЕ[/b][/size][/border]
+[list][size=100][coll3][b]ИМЯ:[/b][a]%text:first_name%[/a]|[b]ФАМИЛИЯ:[/b][a]%text:surname%[/a]|[b]ВТОРОЕ ИМЯ:[/b][a]%text:two_name%ь[/a][/coll3]
+[coll3][b]ТЕКУЩИЙ ОТДЕЛ:[/b]
+[a]%text:division%[/a]|[b]ВРЕМЯ РАБОТЫ В ОТДЕЛЕ:[/b]
+[a]%text:time%[/a]|[b]НОМЕР ЖЕТОНА[/b]
+[a]%text:number%[/a][/coll3][/size][/list][/list]
 
-[coll4][a=Имя]%text:name%[/a]|[a=Второе имя]%text:second_name%[/a]|[a=Фамилия]%text:surname%[/a]|[a=Пол]%text:sex%[/a][/coll4]
-[coll3][a=Дата рождения]%text:birth%[/a]|[a=Телефон]%text:telephone%[/a]|[a=Email]%text:email%[/a][/coll3]
-[a=Адрес]%text:adress%[/a][/doc_b]
+[hr][/hr]
+[list][border=#0F283E][size=110][b]ДОПОЛНИТЕЛЬНЫЕ ВОПРОСЫ[/b][/size][/border][list][size=90]Постарайтесь ответить на все вопросы.[/size]
 
-[doc_b=ИНФОРМАЦИЯ ОБ ИНЦИДЕНТЕ]
+[size=100][b]Почему Вы хотите пройти данную программу?[/b]
+[quote]%text:q1%[/quote]
 
-[coll3][a=Дата инцидента]%text:incident_date%[/a]|[a=Время]%text:incident_time%[/a]|[a=Локация]%text:incident_location%[/a][/coll3]
-[size=90][b]Подавалось ли это заявление или связанное с ним ранее?[/b]
-[%text:checkbox1%] Да    [%text:checkbox2%] Нет[/size][/doc_b]
+[b]Как Вы думаете, зачем нужна эта квалификация?[/b]
+[quote]%text:q2%[/quote][/size][/list]
 
-[doc_b=ИНФОРМАЦИЯ О ПОДОЗРЕВАЕМЫХ]
 
-[size=90][b]Вы знаете имена подозреваемых? Если да, перечислите любых из них.[/b]
-[%text:checkbox3%] Да    [%text:checkbox4%] Нет[/size]
+Я подтверждаю, что [b]ознакомлен[/b] с пунктом "Основные требования" и полностью им соответствую. Вся информация в заявлении является подлинной. Я понимаю, что моё заявление может быть отклонено без объяснения причины и не имею к этому никаких претензий.
 
-[coll][a=Подозреваемый 1 & имя, фамилия, примерное описание]%text:suspect1%[/a]|[a=Подозреваемый 2 & имя, фамилия, примерное описание]%text:suspect2%[/a][/coll]
-[coll][a=Подозреваемый 3 & имя, фамилия, примерное описание]%text:suspect3%[/a]|[a=Подозреваемый 4 & имя, фамилия, примерное описание]%text:suspect4%[/a][/coll][/doc_b]
-
-[doc_b=ИНФОРМАЦИЯ О СВИДЕТЕЛЯХ]
-
-[size=90][b]Присутствовали ли на ситуации свидетели и знаете ли Вы их имена и контакты? Если да, перечислите любых из них.[/b]
-[%text:checkbox5%] Да    [%text:checkbox6%] Нет[/size]
-
-[coll][a=Свидетель 1 Имя, Телефон]%text:witness1%[/a]|[a=Свидетель 2 Имя, Телефон]%text:witness2%[/a][/coll]
-[coll][a=Свидетель 3 Имя, Телефон]%text:witness3%[/a]|[a=Свидетель 4 Имя, Телефон]%text:witness4%[/a][/coll][/doc_b]
-
-[doc_b=СВОДКА]
-
-[size=90]Просьба представить информацию об инциденте. Включить дополнительных свидетелей, очевидцев, подозреваемых и полное описание произошедшего.[/size]
-[textarea=#ccc][color=#555555][justify]%textarea:info%[/justify][/color][/textarea][/doc_b][/doc]
+[center][img]%text:podpis%[/img]
+[size=85](подпись)[/size][/center][/list]
+[color=white]sfpd[/color][/textarea][/background]
