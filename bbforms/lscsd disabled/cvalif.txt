@@ -5,7 +5,7 @@ LSPD[/color]
 
 [hr][/hr]
 [list][border=#0F283E][size=120][b]ИНФОРМАЦИЯ ОБ ОФИЦЕРЕ[/b][/size][/border]
-[list][size=100][coll3][b]ИМЯ:[/b][a]%text:first_name%[/a]|[b]ФАМИЛИЯ:[/b][a]%text:surname%[/a]|[b]ВТОРОЕ ИМЯ:[/b][a]%text:two_name%ь[/a][/coll3]
+[list][size=100][coll3][b]ИМЯ:[/b][a]%text:first_name%[/a]|[b]ФАМИЛИЯ:[/b][a]%text:surname%[/a]|[b]ВТОРОЕ ИМЯ:[/b][a]%text:two_name%[/a][/coll3]
 [coll3][b]ТЕКУЩИЙ ОТДЕЛ:[/b]
 [a]%text:division%[/a]|[b]ВРЕМЯ РАБОТЫ В ОТДЕЛЕ:[/b]
 [a]%text:time%[/a]|[b]НОМЕР ЖЕТОНА[/b]
