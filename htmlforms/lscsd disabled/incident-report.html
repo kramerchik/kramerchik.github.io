@@ -155,9 +155,7 @@
 
     <script>
         function generatePostTitle() {
-            var incident_date = document.getElementsByName("incident_date")[0].value.toUpperCase();
-            var h_output = "[АРЕСТ] Ник-нейм офицера "[0].innerText;
-            h_output = incident_date ? (h_output + " from " + incident_date) : h_output;
+            h_output = "[АРЕСТ] Ник-нейм офицера | Ник-нейм задержанного";
             return h_output;
         }
 
