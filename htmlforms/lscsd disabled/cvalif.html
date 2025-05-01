@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -154,7 +154,11 @@
     
     <script>
         function generatePostTitle() {
-            h_output = "[Квалификация] НИК-НЕЙМ ОФИЦЕРА";
+            var first_name = document.getElementsByName("first_name")[0].value.toUpperCase();
+            var two_name = document.getElementsByName("two_name")[0].value.toUpperCase();
+            var surname = document.getElementsByName("surname")[0].value.toUpperCase();
+            var h_output = "[BLS/MOTO/K9/AIR] " + document.getElementsByName("first_name") + document.getElementsByName("two_name") + document.getElementsByName("surname")[0].innerText;
+            h_output = "[BLS/MOTO/K9/AIR] " + first_name + ' ' + surname;
             return h_output;
         }
 

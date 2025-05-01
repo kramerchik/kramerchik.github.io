@@ -176,7 +176,10 @@
 
     <script>
         function generatePostTitle() {
-            h_output = "[ИНЦИДЕНТ] Имя Фамилия офицера | Место и дата происшествия";
+            var locate = document.getElementsByName("locate")[0].value.toUpperCase();
+            var officer = document.getElementsByName("officer")[0].value.toUpperCase();
+            var h_output = "[ИНЦИДЕНТ] " + document.getElementsByName("officer") + ", " + document.getElementsByName("locate")[0].innerText;
+            h_output = "[ИНЦИДЕНТ] " + officer + ", " + locate;
             return h_output;
         }
 
