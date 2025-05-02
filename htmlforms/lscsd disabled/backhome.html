@@ -204,16 +204,14 @@
     
     <script>
         function generatePostTitle() {
-            var first_name = document.getElementsByName("first_name")[0].value.toUpperCase();
-            var two_name = document.getElementsByName("two_name")[0].value.toUpperCase();
-            var surname = document.getElementsByName("surname")[0].value.toUpperCase();
-            var h_output = "[BLS/MOTO/K9/AIR] " + document.getElementsByName("first_name") + document.getElementsByName("two_name") + document.getElementsByName("surname")[0].innerText;
-            h_output = "[BLS/MOTO/K9/AIR] " + first_name + ' ' + surname;
+            var nickname = document.getElementsByName("nickname")[0].value.toUpperCase();
+            var h_output = "[BACKHOME] " + document.getElementsByName("nickname")[0].innerText;
+            h_output = "[BACKHOME] " + nickname;
             return h_output;
         }
 
         MicroModal.init();
-        window.__bbcodeurl = '/bbforms/lscsd disabled/cvalif.txt';
+        window.__bbcodeurl = '/bbforms/lscsd disabled/back_home.txt';
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

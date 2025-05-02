@@ -8,7 +8,7 @@
 [list][size=100][b]1.1 НИКНЕЙМ ВАШЕГО ПЕРСОНАЖА:[/b] %text:nickname%
 [b]1.2. ПРОЕКТЫ, СООБЩЕСТВА И СЕРВЕРА, ГДЕ ВЫ ИГРАЛИ:[/b] %text:projects%
 [b]1.3. ЗВАНИЕ, ДОЛЖНОСТЬ И ОТДЕЛ:[/b] %text:history%
-[b]1.4. ПРИЧИНА УХОДА:[/b] %text:leave_reason[/size][/list][/list]
+[b]1.4. ПРИЧИНА УХОДА:[/b] %text:leave_reason%[/size][/list][/list]
 
 [hr][/hr]
 [list][border=#0F283E][size=120][b]2. ИНФОРМАЦИЯ О ПОДАЮЩЕМ ЗАЯВЛЕНИЕ[/b][/size][/border]
