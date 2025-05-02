@@ -33,4 +33,4 @@
 
 [coll3][b]Офицер составляющий рапорт:[/b]
 [a]%text:officer%[/a]|[b]Дата составления рапорта:[/b]
-[a]%text:date_report%[/a]|%text:podpis%[/list][/coll3][/textarea][/background]
+[a]%text:date_report%[/a]|[img]%text:podpis%[/img][/list][/coll3][/textarea][/background]
