@@ -6,8 +6,8 @@
 [size=80][b]Рапорт об инциденте[/b][/right][/size]
 [hr][/hr]
 [list][box=#0F283E][color=#FFFFFF][center][size=110]ВАРИАНТ ИНЦИДЕНТА[/size][/center][/color][/box]
-[coll3][b] [] УБИЙСТВО[/b]|[b] [] УНИЧТОЖЕНИЕ ИМУЩЕСТВА[/b]|[b] [] ПРИМЕНЕНИЕ ОРУЖИЯ[/b][/coll3]
-[coll][center][b] [] C ПОСТРАДАВШИМ ОФИЦЕРОМ[/b]|[b] [] C ПОСТРАДАВШИМ ГРАЖДАНСКИМ[/b][/center][/coll]
+[coll3][b] [%text:accept1%] УБИЙСТВО[/b]|[b] [%text:accept2%] УНИЧТОЖЕНИЕ ИМУЩЕСТВА[/b]|[b] [%text:accept3%] ПРИМЕНЕНИЕ ОРУЖИЯ[/b][/coll3]
+[coll][center][b] [%text:accept4%] C ПОСТРАДАВШИМ ОФИЦЕРОМ[/b]|[b] [%text:accept5%] C ПОСТРАДАВШИМ ГРАЖДАНСКИМ[/b][/center][/coll]
 
 [box=#0F283E][color=#FFFFFF][center][size=110]ОСНОВНАЯ ИНФОРМАЦИЯ ОБ ИНЦИДЕНТЕ[/size][/center][/color][/box]
 
