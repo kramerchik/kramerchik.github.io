@@ -1,0 +1,22 @@
+[box=#0F283E][textarea][float=right][image=120]https://www.upload.ee/image/16213436/2344.png[/image][image=120]https://www.upload.ee/image/17454699/SFPD-Community-Police-Academy-Logo.png[/image][/float][color=white]1
+1[/color]
+[center][size=150][b]ДЕПАРТАМЕНТ ПОЛИЦИИ САН-ФИЕРРО[/b][/size]
+[size=130]ОТДЕЛ ПРОФЕССИОНАЛЬНОЙ ПОДГОТОВКИ И ОБУЧЕНИЯ[/size][/center]
+
+[hr][/hr]
+[center][size=120]ЛИЧНОЕ ДЕЛО[/size][/center]
+[border=#0F283E][b]ОСНОВНАЯ ИНФОРМАЦИЯ[/b][/border]
+[list][coll3][b]ИМЯ[/b]
+[a]%text:first_name%[/a]|[b]ВТОРОЕ ИМЯ[/b]
+[a]%text:two_name%[/a]|[b]ФАМИЛИЯ[/b]
+[a]%text:surname%[/a][/coll3]
+[coll3][b]ДАТА ЗАЧИСЛЕНИЯ[/b]
+[a]%text:date%[/a]|[b]ЗВАНИЕ[/b]
+[a]%text:rang%[/a]|[b]ДОЛЖНОСТЬ[/b]
+[a]%text:class_rang%[/a][/coll3][/list]
+
+[border=#0F283E][b]ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ[/b][/border]
+[list][b]АДРЕС ПРОЖИВАНИЯ[/b]
+[a]%text:adress%[/a]
+[b]КОНТАКТНЫЙ НОМЕР ТЕЛЕФОНА[/b]
+[a]%text:phone%[/a][/list][/textarea][/box]
