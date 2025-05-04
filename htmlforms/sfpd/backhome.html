@@ -150,7 +150,7 @@
                 <div align="center">СОГЛАШЕНИЕ</div>
             </span></span></div>
         </span></span>
-        <span style="font-size: 85%; line-height: 116%;"><span><div style="text-align: justify;">Я соглашаюсь, что если покину сообщество в течение испытательного срока без основательной причины, то буду занесен в черный список (ЧС) сообщества без права выхода. Я понимаю, что не все мои перечисленные пожелания могут быть удовлетворены и всё равно соглашаюсь играть. Я соглашаюсь, что мое заявление может быть отклонено без объяснения причин. Я понимаю, что в случае слива любой информации с форума и бесед, я буду занесен в черный список. Я уверяю, что все данные мною ответы в этой заявке являются правдивыми.</div><span style="font-weight: bold"><input type="checkbox" name="accept2"/> Я принимаю условия данного заявления</span>
+        <span style="font-size: 85%; line-height: 116%;"><span><div style="text-align: justify;">Я соглашаюсь, что если покину сообщество в течение испытательного срока без основательной причины, то буду занесен в черный список (ЧС) сообщества без права выхода. Я понимаю, что не все мои перечисленные пожелания могут быть удовлетворены и всё равно соглашаюсь играть. Я соглашаюсь, что мое заявление может быть отклонено без объяснения причин. Я понимаю, что в случае слива любой информации с форума и бесед, я буду занесен в черный список. Я уверяю, что все данные мною ответы в этой заявке являются правдивыми.</div><span style="font-weight: bold"><input type="checkbox" class="checkbox" name="checkbox" /> Я принимаю условия данного заявления</span>
         </div>
        
 
@@ -209,9 +209,25 @@
             h_output = "[BACKHOME] " + nickname;
             return h_output;
         }
+        function form2dict(form) {
+            var values = form.querySelectorAll('[name]');
+            var data = {};
+            for (var i = 0; i < values.length; i++) {
+                if (values[i].classList.contains('datepicker')) {
+                    data[values[i].getAttribute('name')] = values[i].value.toUpperCase() || 'N/A';
+                } else if (values[i].classList.contains('checkbox')) {
+                    var checked = document.getElementsByName("checkbox")[0].checked ? ('X') : ' '
+                    data[values[i].getAttribute('name')] = checked;
+                } else {
+                    data[values[i].getAttribute('name')] = values[i].value || values[i].innerText || 'N/A';
+                }
+            }
+            return data;
+        }
 
         MicroModal.init();
         window.__bbcodeurl = '/bbforms/lscsd disabled/back_home.txt';
+        document.querySelector('[name="name"]').focus();   
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
