@@ -13,7 +13,7 @@
 [coll3][b]ДАТА ЗАЧИСЛЕНИЯ[/b]
 [a]%text:date%[/a]|[b]ЗВАНИЕ[/b]
 [a]%text:rang%[/a]|[b]ДОЛЖНОСТЬ[/b]
-[a]%text:class_rang%[/a][/coll3][/list]
+[a]%text:justification%[/a][/coll3][/list]
 
 [border=#0F283E][b]ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ[/b][/border]
 [list][b]АДРЕС ПРОЖИВАНИЯ[/b]
