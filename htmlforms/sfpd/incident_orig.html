@@ -75,17 +75,17 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Имя пострадавшего:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="suspect_name" placeholder="Заполнить">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" oninput="this.value = this.value.toUpperCase()" name="suspect_name" placeholder="Заполнить">
                                 </div>
                             </td>
                             <td style="vertical-align: top; width:33%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Пол:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><select name="male" style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><select name="male" oninput="this.value = this.value.toUpperCase()" style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
                                     <option value="Мужской">Мужской</option>
                                     <option value="Женский">Женский</option>
                                 </select></div>
                             </td>
                             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Номер телефона:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="tel" placeholder="+1 (583) XX-XXXXXX"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" oninput="this.value = this.value.toUpperCase()" name="tel" placeholder="+1 (583) XX-XXXXXX"/></div>
                             </td>
                         </tr>
                     </tbody>
@@ -94,10 +94,10 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата рождения:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="b-day" placeholder="МЕС 11, 2025"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" class='datepicker' name="b-day" placeholder="МЕС 11, 2025"/></div>
                             </td>
                             <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Адрес происшествия: </span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="locate" placeholder="Постарайтесь указать точную локацию"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="locate" oninput="this.value = this.value.toUpperCase()" placeholder="Постарайтесь указать точную локацию"/></div>
                             </td>
                         </tr>
                     </tbody>
@@ -106,10 +106,10 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата инцидента:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="date" placeholder="МЕС 11, 2025"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" required="" class="datepicker" name="incident_date" placeholder="ДАТА ИНЦИДЕНТА"/></div>
                             </td>
                             <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Время инцидента:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="time" name="time" placeholder="Постарайтесь указать точную локацию"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="time" name="time" oninput="this.value = this.value.toUpperCase()" placeholder="Постарайтесь указать точную локацию"/></div>
                             </td>
                         </tr>
                     </tbody>
@@ -125,7 +125,7 @@
                 <tbody>
                     <tr>
                         <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">В результате инцидента кто-то получил ранение?</span><br>
-                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="300" placeholder="Если нет - оставьте пустым"/></div>
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="300" oninput="this.value = this.value.toUpperCase()" placeholder="Если нет - оставьте пустым"/></div>
                         </td>
                         <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Требуется ли пострадавшему госпитализация?</span><br>
                             <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><select name="medic" style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
@@ -140,10 +140,10 @@
                 <tbody>
                     <tr>
                         <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Офицер, составляющий рапорт:</span><br>
-                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer" placeholder="Имя, фамилия"/></div>
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer" oninput="this.value = this.value.toUpperCase()" placeholder="Имя, фамилия"/></div>
                         </td>
                         <td style="vertical-align: top; width:33%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата составления: </span><br>
-                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="date_report" placeholder="МЕС 11, 2025"/></div>
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" class='datepicker' name="date_report" placeholder="МЕС 11, 2025"/></div>
                         </td>
                         <td style="vertical-align: top; width:33%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Подпись: </span><br>
                             <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="podpis" placeholder="http://ссылка.png"/></div>
@@ -250,7 +250,6 @@
 
         MicroModal.init();
         window.__bbcodeurl = '/bbforms/lscsd disabled/incident.txt';
-        document.querySelector('[name="name"]').focus();  
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

@@ -44,14 +44,14 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ИМЯ:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="first_name" placeholder="Заполнить">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input oninput="this.value = this.value.toUpperCase()" type="text" name="first_name" placeholder="Заполнить">
                                 </div>
                             </td>
                             <td style="vertical-align: top; width:33%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ФАМИЛИЯ:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" required="" class="pages_uk" name="surname" placeholder="Заполнить"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" required="" oninput="this.value = this.value.toUpperCase()" class="pages_uk" name="surname" placeholder="Заполнить"/></div>
                             </td>
                             <td style="vertical-align: top; width:33%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ВТОРОЕ ИМЯ:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" required="" class="pages_uk" name="two_name" placeholder="Заполнить"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" required="" oninput="this.value = this.value.toUpperCase()" class="pages_uk" name="two_name" placeholder="Заполнить"/></div>
                             </td>
                         </tr>
                     </tbody>
@@ -62,17 +62,17 @@
                             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ТЕКУЩИЙ ОТДЕЛ:</span><br>
                             
                                 <select name="division" style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-                                    <option value="CENTRAL PATROL DIVISION">CENTRAL PATROL DIVISION</option>
-                                    <option value="TRAINING AND EDUCATION">TRAINING AND EDUCATION</option>
-                                    <option value="GENERAL CRIMES UNIT">GENERAL CRIMES UNIT</option>
-                                    <option value="INTERNAL AFFAIRS DIVISION">INTERNAL AFFAIRS DIVISION</option>
+                                    <option value="ЦЕНТРАЛЬНЫЙ ПАТРУЛЬНЫЙ ДИВИЗИОН">CENTRAL PATROL DIVISION</option>
+                                    <option value="ОТДЕЛ ПРОФЕССИОНАЛЬНОГО ОБУЧЕНИЯ И ПОДГОТОВКИ">TRAINING AND EDUCATION</option>
+                                    <option value="ОТДЕЛ ОБЩИХ ПРЕСТУПЛЕНИЙ">GENERAL CRIMES UNIT</option>
+                                    <option value="ОТДЕЛ ВНУТРЕННИХ РАССЛЕДОВАНИЙ">INTERNAL AFFAIRS DIVISION</option>
                                 </select>
                             </td>
                             <td style="vertical-align: top; width:33%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ВРЕМЯ РАБОТЫ В ОТДЕЛЕ:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="time" placeholder="IC-время"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" oninput="this.value = this.value.toUpperCase()" name="time" placeholder="IC-время"/></div>
                             </td>
                             <td style="vertical-align: top; width:33%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">НОМЕР ЖЕТОНА:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" required="" class="pages_uk" name="number" placeholder="Заполнить"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" oninput="this.value = this.value.toUpperCase()" required="" class="pages_uk" name="number" placeholder="Заполнить"/></div>
                             </td>
                         </tr>
                     </tbody>
@@ -153,6 +153,9 @@
       </div>
     
     <script>
+        String.prototype.capitalize = function() {
+            return this.toUpperCase();
+        };
         function generatePostTitle() {
             var first_name = document.getElementsByName("first_name")[0].value.toUpperCase();
             var two_name = document.getElementsByName("two_name")[0].value.toUpperCase();

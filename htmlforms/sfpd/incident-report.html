@@ -44,11 +44,11 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Имя, фамилия, возраст и национальность:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="suspect_name" placeholder="Заполнить">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="suspect_name" oninput="this.value = this.value.toUpperCase()" placeholder="Заполнить">
                                 </div>
                             </td>
                             <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Задержанный подозревается в статьях:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" required="" class="pages_uk" name="pages_uk" placeholder="Причина ареста"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" required="" class="pages_uk" oninput="this.value = this.value.toUpperCase()" name="pages_uk" placeholder="Причина ареста"/></div>
                             </td>
                         </tr>
                     </tbody>
@@ -57,10 +57,10 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата проведенного ареста:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="date" placeholder="МЕС 11, 2025"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" class='datepicker' name="date" placeholder="МЕС 11, 2025"/></div>
                             </td>
                             <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Время проведенного ареста:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="time" placeholder="10:30 AM"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="time" oninput="this.value = this.value.toUpperCase()" placeholder="10:30 AM"/></div>
                             </td>
                         </tr>
                     </tbody>
@@ -72,7 +72,7 @@
                                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="vk_suspect" placeholder="Если человек хочет играть с детективами"/></div>
                             </td>
                             <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Место задержания:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="locate" placeholder="Постарайтесь указать точную локацию"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" oninput="this.value = this.value.toUpperCase()" name="locate" placeholder="Постарайтесь указать точную локацию"/></div>
                             </td>
                         </tr>
                     </tbody>
@@ -93,10 +93,10 @@
                 <tbody>
                     <tr>
                         <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Офицеры, присутствующие на ситуации:</span><br>
-                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officers" placeholder="Офицеры, которые присутствовали на ситуации (НикНеймы)"/></div>
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officers" oninput="this.value = this.value.toUpperCase()" placeholder="Офицеры, которые присутствовали на ситуации (НикНеймы)"/></div>
                         </td>
                         <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Офицер составляющий рапорт:</span><br>
-                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="author" placeholder="Ваше имя, фамилия, звание"/></div>
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="author" oninput="this.value = this.value.toUpperCase()" placeholder="Ваше имя, фамилия, звание"/></div>
                         </td>
                     </tr>
                 </tbody>

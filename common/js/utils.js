@@ -13,6 +13,10 @@ function form2dict(form) {
   return data;
 }
 
+String.prototype.capitalize = function() {
+  return this.toUpperCase();
+};
+
 function applyValues(bbtemplate, dict) {
   for (key in dict) {
     var regexp = new RegExp("%(text|textarea|span):" + key + "%", "g");
@@ -22,27 +26,27 @@ function applyValues(bbtemplate, dict) {
 }
 
 function parseDate(now) {
-  // DD/MMM/YYYY
+  // МЕС 1, 25
   now = now || new Date();
   var months = [
-    "JAN",
-    "FEB",
-    "MAR",
-    "APR",
-    "MAY",
-    "JUN",
-    "JUL",
-    "AUG",
-    "SEP",
-    "OCT",
-    "NOV",
-    "DEC",
+    "ЯНВ",
+    "ФЕВ",
+    "МАР",
+    "АПР",
+    "МАЙ",
+    "ИЮН",
+    "ИЮЛ",
+    "АВГ",
+    "СЕН",
+    "ОКТ",
+    "НОВ",
+    "ДЕК",
   ];
   return (
-    ("0" + now.getDate()).slice(-2) +
-    "/" +
-    months[now.getMonth()] +
-    "/" +
+    (months[now.getMonth()] +
+    " " +
+    now.getDate()).slice(-2) +
+    "," +
     now.getFullYear()
   );
 }
@@ -81,16 +85,15 @@ function copyCode(btn) {
 
 $(function () {
   $(".datepicker").datepicker({
-    dateFormat: "dd/M/yy",
-  });
-});
-
-$(function () {
-  $(".datepicker_full").datepicker({
-    dateFormat: "dd/M/yy",
-    changeMonth: true,
-    changeYear: true,
-    yearRange: "1920:+0",
+    dateFormat: "M dd, yy",
+    monthNames: [
+      "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+      "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"
+    ],
+    monthNamesShort: [
+      "Янв", "Фев", "Мар", "Апр", "Май", "Июн",
+      "Июл", "Авг", "Сен", "Окт", "Ноя", "Дек"
+    ],
   });
 });
 
