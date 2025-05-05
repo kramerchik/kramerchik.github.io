@@ -21,7 +21,7 @@
 [a]%text:locate%[/a][/coll]
 
 [coll][b]Дата инцидента:[/b]
-[a]%text:date%[/a]|[b]Время Инцидента:[/b]
+[a]%text:incident_date%[/a]|[b]Время Инцидента:[/b]
 [a]%text:time%[/a][/coll]
 
 [box=#0F283E][color=#FFFFFF][center][size=110]ОПИСАНИЕ ИНЦИДЕНТА[/size][/center][/color][/box]
