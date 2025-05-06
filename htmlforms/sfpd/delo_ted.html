@@ -76,7 +76,17 @@
                                 </select>
                             </td>
                             <td style="vertical-align: top; width:33%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ДОЛЖНОСТЬ:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" required="" name="class_rang" placeholder="Заполнить"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                                    <input type="text" name="justification" list="justification" placeholder="Выбрать или заполнить" />
+                                    <datalist id="justification">
+                                        <option value="ИНСТРУКТОР НА СТАЖИРОВКЕ">
+                                        <option value="ВСПОМОГАТЕЛЬНЫЙ ИНСТРУКТОР">
+                                        <option value="ИНСТРУКТОР">
+                                        <option value="КООРДИНАТОР ПО ПРОГРАММАМ КВАЛИФИКАЦИЙ">
+                                        <option value="КУРАТОР ТРЕНИРОВОЧНОГО ОТДЕЛА">
+                                        <option value="КОМАНДИР ТРЕНИРОВОЧНОГО ОТДЕЛА">
+                                    </datalist>
+                                </div>
                             </td>
                         </tr>
                     </tbody>
