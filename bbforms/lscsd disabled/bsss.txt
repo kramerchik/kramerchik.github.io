@@ -1,0 +1,36 @@
+[box=#0F283E][textarea][float=left][image=170]https://www.upload.ee/image/16052073/____________2023-12-14_201535302.png[/image][/float]
+[size=150][right][b]Департамент полиции Сан-Фиерро[/b][/size]
+[size=110][b]Центр вербовки и обучения[/b][/size]
+[size=80][b]Персональное командование[/b][/size]
+[size=80][b]Карьерная программа[/b][/size]
+[size=70][b]Школа базовой подготовки сержанта-супервайзера[/b][/right][/size]
+[hr][/hr]
+[size=110][b]ХАРАКТЕРИСТИКА О КАНДИДАТЕ[/b][/size]
+
+[background=#FFFFFF][coll3][b]ИМЯ:[/b][a]%text:first_name%[/a]|[b]ФАМИЛИЯ:[/b][a]%text:surname%[/a]|[b]ВТОРОЕ ИМЯ:[/b][a]%text:two_name%[/a][/coll3][/background]
+[background=#FFFFFF][coll3][b]ОПЫТ РАБОТЫ В ОТДЕЛЕ:[/b][a]%text:time%[/a]|[b]ЗВАНИЕ:[/b][a]%text:rang%[/a]|[b]ПОЛУЧЕННЫЕ НАГРАДЫ:[/b][a]%text:rang%[/a][/coll3][/background]
+
+
+[size=110][b]ХАРАКТЕРИСТИКА РУКОВОДИТЕЛЯ ПОДРАЗДЕЛЕНИЯ[/b][/size]
+[hr][/hr]
+[center][size=90][quote]%text:harka%[/quote]
+[i]%text:rang_sgt% %text:sgt_name%[/i][/size][/center]
+
+
+[size=110][b]ПИСЬМЕННЫЕ ВОПРОСЫ[/b][/size]
+[hr][/hr]
+[size=97][b]I.[/b] Вы считаете себя подходящим кандидатом, способным пройти данную специализированную программу? Аргументируйте и приведите не не менее четырёх обоснованных фактов.[/size]
+[quote][size=88]%text:q1%[/size][/quote]
+
+[size=97][b]II.[/b] Вы встречались с некоторыми событиями, где Вам пришлось проявить себя или взять на себя лидерство в определённой ситуации или группе лиц?[/size]
+[quote][size=88]%text:q2%[/size][/quote]
+
+[size=97][b]III.[/b] Укажите ваши отличительные черты, от других офицеров полиции.[/size]
+[quote][size=88]%text:q3%[/size][/quote]
+
+[size=97][b]IV.[/b] [%text:checkbox%] Вы подтверждаете настоящим, что Вы отвечаете всем требованиям граф "НЕОБХОДИМЫЕ НАВЫКИ И КАЧЕСТВА" и "ОСНОВНЫЕ ТРЕБОВАНИЯ ДЛЯ КАНДИДАТА"? В случае согласия, отметьте X в начале вопроса.
+[/size]
+[right]%text:rang% %text:first_name% %text:surname%
+ответственный за написанное заявление
+
+%text:podpis%[/right][/textarea][/box]
