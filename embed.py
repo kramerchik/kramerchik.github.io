@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 ROOT = Path(__file__).parent
 
 INPUT_FILE_NAME = "main.html"
-OUTPUT_FILE_NAME = "index.html"
+OUTPUT_FILE_NAME = "IAD_enter.html"
 
 
 def embed_assets() -> None:
