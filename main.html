@@ -25,9 +25,9 @@
         </main>
         <footer class="text-muted navbar">
             <div class="container">
-                <p>Код и оформление <a href="https://vk.com/t_taim" rel="noopener noreferer" target="_blank">@pepper</a>, <a href="https://vk.com/denisov_a_d" rel="noopener noreferer" target="_blank">@kramerchik</a>, <a href="https://vk.com/crystal_domen" rel="noopener noreferer" target="_blank">@crys</a></p>
+                <p>Код и оформление <a href="https://vk.com/denisov_a_d" rel="noopener noreferer" target="_blank">@kramerchik</a></p>
                 <p class="float-right">
-                    <a href="https://vk.com/nycpdru">NYC-PD.RU</a>
+                    (с) <a href="https://vk.com/nycpdru">NYC-PD.RU</a>
                 </p>
             </div>
         </footer>
@@ -47,6 +47,33 @@
                 trackLinks:true,
                 accurateTrackBounce:true
             });
+        </script>
+        <script language='JavaScript1.2'>
+        if (window.Event)
+        document.captureEvents(Event.MOUSEUP);
+        
+        function nocontextmenu() {
+        event.cancelBubble = true, event.returnValue = false;
+        
+        return false;
+        }
+        
+        function norightclick(e) {
+        if (window.Event) {
+        if (e.which == 2 || e.which == 3) return false;
+        }
+        else if (event.button == 2 || event.button == 3) {
+        event.cancelBubble = true, event.returnValue = false;
+        return false;
+        }
+        }
+        
+        if (document.layers)
+        document.captureEvents(Event.MOUSEDOWN);
+        
+        document.oncontextmenu = nocontextmenu;
+        document.onmousedown = norightclick;
+        document.onmouseup = norightclick;
         </script>
         <noscript><div><img src="https://mc.yandex.ru/watch/101513650" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
         <!-- /Yandex.Metrika counter -->
