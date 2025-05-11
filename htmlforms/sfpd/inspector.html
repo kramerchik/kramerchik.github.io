@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/common/css/style.css">
+    <link rel="stylesheet" href="/common/css/micromodal.css">
+    <script src="/common/js/micromodal.min.js"></script>
+    <script src="/common/js/utils.js"></script>
+
+    <title>Заявление на прохождение курса - SFPD</title>
+</head>
+
+<body>
+    <div class="form" style="border: 1px solid #0F283E; padding: 10px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td style="vertical-align: top; width:26%; padding-right:15px; color: rgb(0, 0, 0);">
+                        <div align="left"> <img src="/favicon.png" height="150" width="150" class="" alt=""><br></div>
+                    </td>
+                    <div align="center">
+                    </div>
+                    <td style="vertical-align: centered_text; width:100%;  color: rgb(0, 0, 0); ">
+                        <div align="right"><span style="font-size: 20px;">Персональное командование<br>Карьерная программа<br><span style="font-weight: bold; font-size: 25px;">Школа базовой подготовки сержанта-супервайзера</span> </span> </div>
+                    </td>
+                    <td style="vertical-align: top; width:26%; padding-left:10px;"> <br>
+                        <div align="right"><span style="font-size: 85%; line-height: 116%; color: #0F283E;">
+                            </span></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="border-bottom: 1px solid #0F283E; padding: 1px;"></div> <br>
+        <div style="padding: 2px; background-color: #0F283E;"><span><span style="color: #FFFFFF">
+                    <div align="center">СВЕДЕНИЯ О КАНДИДАТЕ</div>
+                </span></span></div>
+        <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><span style="color: #000000">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ИМЯ:</span><br>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input oninput="this.value = this.value.toUpperCase()" type="text" name="first_name" placeholder="Заполнить">
+                                </div>
+                            </td>
+                            <td style="vertical-align: top; width:33%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ФАМИЛИЯ:</span><br>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" required="" oninput="this.value = this.value.toUpperCase()" class="pages_uk" name="surname" placeholder="Заполнить"/></div>
+                            </td>
+                            <td style="vertical-align: top; width:33%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ВТОРОЕ ИМЯ:</span><br>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" required="" oninput="this.value = this.value.toUpperCase()" class="pages_uk" name="two_name" placeholder="Заполнить"/></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table><br>
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ЗВАНИЕ:</span><br>
+                            
+                                <select name="rang" style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px ">
+                                    <option value="N/A" selected disabled hidden>Выберите ваш ранг</option>
+                                    <option value="ОФИЦЕР ПОЛИЦИИ ВТОРОЙ КВАЛИФИКАЦИИ">Police Officer Q2</option>
+                                    <option value="ОФИЦЕР ПОЛИЦИИ ТРЕТЬЕЙ КВАЛИФИКАЦИИ">Police Officer Q3</option>
+                                    <option value="ОФИЦЕР ПОЛИЦИИ ЧЕТВЕРТОЙ КВАЛИФИКАЦИИ">Police Officer Q4</option>
+                                </select>
+                            </td>
+                            <td style="vertical-align: top; width:33%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ВРЕМЯ РАБОТЫ В ОТДЕЛЕ:</span><br>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" oninput="this.value = this.value.toUpperCase()" name="time" placeholder="IC-время"/></div>
+                            </td>
+                            <td style="vertical-align: top; width:33%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">НАГРАДЫ:</span><br>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" required="" class="pages_uk" name="medals" placeholder="Заполнить"/></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table> <br>
+                
+            
+        <div style="border-bottom: 1px solid #0F283E; padding: 1px;"></div>
+        <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ХАРАКТЕРИСТИКА РУКОВОДИТЕЛЯ ПОДРАЗДЕЛЕНИЯ:</span><br>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 10px"><textarea name="harka" placeholder="Вставьте сюда характеристику, которую Вам написал Ваш супервайзер." cols="78"></textarea></div> 
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+        </table>
+        <div align="center">
+            <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ЗВАНИЕ РУКОВОДИТЕЛЯ ПОДРАЗДЕЛЕНИЯ:</span><br>
+                            
+                                <select name="rang_sgt" style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px ">
+                                    <option value="N/A" selected disabled hidden>Выберите ваш ранг</option>
+                                    <option value="Sgt.">СЕРЖАНТ ПОЛИЦИИ</option>
+                                    <option value="Lt.">ЛЕЙТЕНАНТ ПОЛИЦИИ</option>
+                                    <option value="Cpt.">КАПИТАН ПОЛИЦИИ</option>
+                                </select>
+                            </td>
+                            <td style="vertical-align: top; width:33%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ИМЯ, ФАМИЛИЯ РУКОВОДИТЕЛЯ:</span><br>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="sgt_name" placeholder="Имя Фамилия"/></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+    </div><br>
+
+        <div style="padding: 2px; background-color: #0F283E;"><span><span style="color: #FFFFFF">
+                <div align="center">ОТВЕТЫ НА ВОПРОСЫ</div>
+            </span></span></div>
+        </span></span>
+            <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">I. Вы считаете себя подходящим кандидатом, способным пройти данную специализированную программу?</span><br>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 10px"><textarea name="q1" placeholder="Аргументируйте и приведите не не менее четырёх обоснованных фактов." cols="78"></textarea></div> 
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+        </table>
+            <br>
+            <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">II. Вы встречались с некоторыми событиями, где Вам пришлось проявить себя или взять на себя лидерство в определённой ситуации или группе лиц?</span><br>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 10px"><textarea name="q2" placeholder="Опишите эти события как можно подробно, укажите их исход." cols="78"></textarea></div> 
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+        </table>
+        <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">III. Напишите, в чем Ваше отличие от других офицеров?</span><br>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 10px"><textarea name="q3" placeholder="Отвечайте на вопрос обширно, раскройте его тему." cols="78"></textarea></div> 
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+        </table>
+        <span style="font-size: 85%; line-height: 116%;"><span style="font-weight: bold"><input type="checkbox" class="checkbox" name="checkbox" /> Я подтверждаю, что соответсвую всем критериям. Соглашаюсь, что заявление может быть отказано без указания причин.</span></span></span><br>
+            <br><table width="100%">
+                <tbody>
+                    <tr>
+                        <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Ссылка на подпись:</span><br>
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="podpis" placeholder="http://ссылка.png"/></div>
+                            <span style=" font-style: oblique; font-size: 90%; line-height: 116%;">* Оформляйте подписи своих персонажей. Подпись от руки, черного цвета. Прописные буквы. Сайт для получения ссылки: <a href="http://x-lines.ru/" rel="noopener noreferer" target="_blank">http://x-lines.ru/</a></span>
+                        </td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+       
+
+    <div class="btn-container">
+        <button class="modal__btn modal__btn-primary" onclick="showBB()">Generate</button>
+        <button class="modal__btn" onclick="window.location.assign('/')">Back</button>
+    </div>
+    <!-- Welcome Modal -->
+    <div class="modal fade" id="welcome_modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Условия подачи заявления.</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <b>1.</b> Я понимаю и соглашаюсь с тем, что мое заявление могут отклонить <a class="text-danger">без разъяснения причины отказа</a>. 
+                    <br><b>2.</b> Я понимаю и соглашаюсь с тем, что при одобрении моего заявления, я попаду на 7-ми дневный испытательный срок, в течении которого меня могут уволить с причиной провала испытательного срока.
+                    <br><b>3.</b> Я понимаю и соглашаюсь с тем, что если покину фракцию в течении 7 дней, то буду занесен в черный список (ЧС) фракции. 
+                    <br><b>4.</b> Я понимаю и соглашаюсь с тем, что не все мои пожелания могут быть удовлетворены. 
+                    <br><b>5.</b> Я понимаю и соглашаюсь с тем, что в случае слива любой информации с форума я буду занесен в черный список LV-ES.
+                    <br><b>6.</b> В случае одобрения, я обязуюсь изучить всю информацию на форуме в разделе Documents, включая <a class="text-danger">структуру фракции, мануал, хендбук, правила фракции и новости фракции</a>, и соглашаюсь с тем, что могу быть уволен за нарушение любого пункта правил фракции. 
+                    <br><b>7.</b> Я понимаю и соглашаюсь с тем, что после получения групп на форуме и изучения документации, у меня будет 24 часа, чтобы пройти <a class="text-danger">квалификационный тест</a>.
+                    <br><b>8.</b> Я имею интерес в развитии роли своего персонажа и готов создать топик СС при необходимости.
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Accept</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="output_modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">BBCode для копирования</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <label for="output__header">Topic Name</label>
+                    </div>
+                    <div class="col-9 col-lg-10">
+                        <input type="text" class="form-control" id="output__header">
+                    </div>
+                    <div class="col-3 col-lg-2">
+                        <button class="btn btn-outline-secondary" type="button" data-field="output__header" onclick="copyCode(this)">Copy</button>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <label for="output__body">Report Code</label>
+                    </div>
+                    <div class="col-9 col-lg-10">
+                        <textarea class="form-control" rows="10" id="output__body"></textarea>
+                    </div>
+                    <div class="col-3 col-lg-2 d-flex align-items-center">
+                        <button class="btn btn-outline-secondary" type="button" data-field="output__body" onclick="copyCode(this)">Copy</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            <button type="button" class="btn btn-primary" onclick="window.open('https://sfpd.nyc-pd.ru/posting.php?mode=post&f=33')">На форум</button>
+          </div>
+        </div>
+      </div>
+
+    
+    <script>
+        $(function(){
+			$("#welcome_modal").modal("show");
+		})
+
+        String.prototype.capitalize = function() {
+            return this.toUpperCase();
+        };
+
+        function generatePostTitle() {
+            var first_name = document.getElementsByName("first_name")[0].value.toUpperCase();
+            var surname = document.getElementsByName("surname")[0].value.toUpperCase();
+            var h_output = "[BSSS] " + document.getElementsByName("first_name")[0].innerText + ' ' + document.getElementsByName("surname")[0].innerText;
+            h_output = "[BSSS] " + first_name + ' ' + surname;
+            return h_output;
+        }
+        function form2dict(form) {
+            var values = form.querySelectorAll('[name]');
+            var data = {};
+            for (var i = 0; i < values.length; i++) {
+                if (values[i].classList.contains('datepicker')) {
+                    data[values[i].getAttribute('name')] = values[i].value.toUpperCase() || 'N/A';
+                } else if (values[i].classList.contains('checkbox')) {
+                    var checked = document.getElementsByName("checkbox")[0].checked ? ('X') : ' '
+                    data[values[i].getAttribute('name')] = checked;
+                } else {
+                    data[values[i].getAttribute('name')] = values[i].value || values[i].innerText || 'N/A';
+                }
+            }
+            return data;
+        }
+
+        MicroModal.init();
+        window.__bbcodeurl = '/bbforms/lscsd disabled/bsss.txt';
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script>!function(e,t,a,n,c,m,r){e.ym=e.ym||function(){(e.ym.a=e.ym.a||[]).push(arguments)},e.ym.l=1*new Date,m=t.createElement(a),r=t.getElementsByTagName(a)[0],m.async=1,m.src="https://mc.yandex.ru/metrika/tag.js",r.parentNode.insertBefore(m,r)}(window,document,"script"),ym(54400579,"init",{clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})</script>
+      <noscript><div><img src='https://mc.yandex.ru/watch/54400579' style='position:absolute;left:-9999px' alt=''></div></noscript>
+</body>
+</html>

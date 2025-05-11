@@ -1,0 +1,27 @@
+[box=#0F283E][textarea][box1=#FFFFFF][float=left][image=150]https://www.upload.ee/image/16884622/sfpd_logo_cvet.png[/image][/float][size=150][right][b]Департамент полиции Сан-Фиерро[/b][/size]
+[size=110][b]Центр вербовки и обучения[/b][/size]
+[size=80][b]Персональное командование[/b][/size]
+[size=80][b]Карьерная программа[/b][/size]
+[size=70][b]Школа офицеров полевой подготовки[/b][/right][/size]
+[hr][/hr]
+[size=110][b]ХАРАКТЕРИСТИКА О КАНДИДАТЕ[/b][/size]
+[hr][/hr]
+[background=#FFFFFF][coll3][b]ИМЯ:[/b][a]%text:first_name%[/a]|[b]ФАМИЛИЯ:[/b][a]%text:surname%[/a]|[b]ВТОРОЕ ИМЯ:[/b][a]%text:two_name%[/a][/coll3][/background]
+[background=#FFFFFF][coll3][b]ОПЫТ РАБОТЫ В ОТДЕЛЕ:[/b][a]%text:time%[/a]|[b]ЗВАНИЕ:[/b][a]%text:rang%[/a]|[b]ПОЛУЧЕННЫЕ НАГРАДЫ:[/b][a]%text:rang%[/a][/coll3][/background]
+
+
+[size=110][b]ХАРАКТЕРИСТИКА РУКОВОДИТЕЛЯ ПОДРАЗДЕЛЕНИЯ[/b][/size]
+[hr][/hr]
+[center][size=90][quote]%text:harka%[/quote]
+[i]%text:rang_sgt% %text:sgt_name%[/i][/size][/center]
+
+
+[size=110][b]ПИСЬМЕННЫЕ ВОПРОСЫ[/b][/size]
+[hr][/hr]
+[size=97][b]I.[/b] Вы считаете себя настоящим кандидатом, способным пройти данную специализированную программу? Аргументируйте и приведите не менее 3-х фактов.[/size]
+[quote][size=88]%text:q1%[/size][/quote]
+
+[size=97][b]II.[/b] Были ли в Вашей патрульной деятельности случаи, когда Вы проявили себя некоторыми действиями/подвигами?[/size]
+[quote][size=88]%text:q2%[/size][/quote]
+
+[size=97][b]III.[/b] [%text:checkbox%] Вы подтверждаете настоящим, что Вы отвечаете всем требованиям граф "НЕОБХОДИМЫЕ НАВЫКИ И КАЧЕСТВА" и "ОСНОВНЫЕ ТРЕБОВАНИЯ ДЛЯ КАНДИДАТА"? В случае согласия, отметьте X в начале вопроса.[/size][/box][/textarea][/box1]
