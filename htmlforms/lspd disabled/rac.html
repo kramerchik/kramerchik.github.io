@@ -46,16 +46,16 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Ответственный следователь:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="suspect_name" placeholder="Имя Фамилия">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="detective_name" placeholder="Имя Фамилия">
                                 </div>
                             </td>
                             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Участвующие следователи:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="suspect_name" placeholder="Имя Фамилия">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="support_name" placeholder="Имя Фамилия">
                                 </div>
                             </td>
                             <td style="vertical-align: top; width:25%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Статус дела:</span><br>
                                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-                                    <input type="text" name="justification" list="justification" placeholder="Выбрать или заполнить" />
+                                    <input type="text" name="status" list="justification" placeholder="Выбрать или заполнить" />
                                     <datalist id="justification">
                                         <option value="НАЧАТО">
                                         <option value="ПРИОСТАНОВЛЕНО">
@@ -79,7 +79,7 @@
                                 </div>
                             </td>
                             <td style="vertical-align: top; width:80%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Локация:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="suspect_name" placeholder="Место инцидента">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="locate" placeholder="Место инцидента">
                                 </div>
                             </td>
                         </tr>
@@ -94,15 +94,15 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Подозреваемый офицер:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="date" placeholder="Заполнить">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="suspect" placeholder="Заполнить">
                                 </div>
                             </td>
                             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">В каких статьях подозревается:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="time" placeholder="Заполнить">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="pg_uk" placeholder="Заполнить">
                                 </div>
                             </td>
                             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Личное дело офицера:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="suspect_name" placeholder="https://sfpd.nyc-pd.ru/...">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="delo_cpd" placeholder="https://sfpd.nyc-pd.ru/...">
                                 </div>
                             </td>
                         </tr>
@@ -110,31 +110,31 @@
                 </table><br>
                 <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Характеристика от руководства:</span><br>
                 <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 10px">
-                    <textarea name="incident_description" >sgt. Name Surname писал(а): ТЕКСТ</textarea></div>  
+                    <textarea name="harka" >sgt. Name Surname писал(а): ТЕКСТ</textarea></div>  
                 <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Классификация дела:</span>
                 <table width="100%">
                         <tbody>
                             <tr>
-                                <input type="checkbox" class="checkbox" name="accept1" /><span style="font-size: 90%; line-height: 116%;">Внутреннее</span>
+                                <input type="checkbox" class="checkbox" name="class1" /><span style="font-size: 90%; line-height: 116%;">Внутреннее</span>
                                 </td>
                             </tr>
                             <tr>
-                                <input type="checkbox" class="checkbox" name="accept2" /><span style="font-size: 90%; line-height: 116%;">Административное</span>
+                                <input type="checkbox" class="checkbox" name="class2" /><span style="font-size: 90%; line-height: 116%;">Административное</span>
                             </td>
                             <tr>
-                                <input type="checkbox" class="checkbox" name="accept3" /><span style="font-size: 90%; line-height: 116%;">Уголовное</span>
+                                <input type="checkbox" class="checkbox" name="class3" /><span style="font-size: 90%; line-height: 116%;">Уголовное</span>
                             </td>
                             <tr>
-                                <input type="checkbox" class="checkbox" name="accept3" /><span style="font-size: 90%; line-height: 116%;">С пострадавшим офицером</span>
+                                <input type="checkbox" class="checkbox" name="class3" /><span style="font-size: 90%; line-height: 116%;">С пострадавшим офицером</span>
                             </td><br>
                         </tr>
                         </tbody>
                     </table><br>
 
                     <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Проходил ли ранее по делам:</span><br>
-                    <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="suspect_name" placeholder="Да/нет, если да, ссылки на те кейс-файлы, по которым он проходил (как свидетель, подозреваемый)"></div><br>
+                    <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="dela" placeholder="Да/нет, если да, ссылки на те кейс-файлы, по которым он проходил (как свидетель, подозреваемый)"></div><br>
                     <h5>| ДЕЙСТВУЮЩИЕ САНКЦИИ НА ВРЕМЯ РАССЛЕДОВАНИЯ</h5>
-                    <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="suspect_name" placeholder="Выдается ли отстранение, если да, по какой причине и на какой срок"></div>
+                    <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="sanction" placeholder="Выдается ли отстранение, если да, по какой причине и на какой срок"></div>
         </div><br>
         <div style="padding: 10px; background-color: #0F283E;"><span><span style="color: #FFFFFF">
                     <div align="center">ПОДРОБНОЕ ОПИСАНИЕ СИТУАЦИИ</div>
@@ -154,14 +154,14 @@
                     <table width="100%">
                         <tbody>
                             <tr>
-                                <input type="checkbox" class="checkbox" name="accept1" /><span style="font-size: 90%; line-height: 116%;">Жив</span>
+                                <input type="checkbox" class="checkbox" name="status11" /><span style="font-size: 90%; line-height: 116%;">Жив</span>
                                 </td>
                             </tr><br>
                             <tr>
-                                <input type="checkbox" class="checkbox" name="accept2" /><span style="font-size: 90%; line-height: 116%;">Мёртв</span>
+                                <input type="checkbox" class="checkbox" name="status12" /><span style="font-size: 90%; line-height: 116%;">Мёртв</span>
                             </td><br>
                             <tr>
-                                <input type="checkbox" class="checkbox" name="accept3" /><span style="font-size: 90%; line-height: 116%;">Незаконно задержан</span>
+                                <input type="checkbox" class="checkbox" name="status13" /><span style="font-size: 90%; line-height: 116%;">Незаконно задержан</span>
                             </td><br>
                         </tr>
                         </tbody>
@@ -170,15 +170,15 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Имя, фамилия</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="suspect_name" placeholder="Имя Фамилия">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="name1" placeholder="Имя Фамилия">
                                 </div>
                             </td>
                             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Номер телефона:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="suspect_name" placeholder="+ 1 (735) XX-YYYYY">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="phone1" placeholder="+ 1 (735) XX-YYYYY">
                                 </div>
                             </td>
                             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Страница ВКонтакте:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="vkurl" placeholder="https://vk.com/....." />
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="vk1" placeholder="https://vk.com/....." />
                                 </div>
                             </td>
                         </tr>
@@ -188,18 +188,18 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:20%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Нанесенный ущерб:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="date" placeholder="Сумма ущерба или полученные травмы">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="userb1" placeholder="Сумма ущерба или полученные травмы">
                                 </div>
                             </td>
                             <td style="vertical-align: top; width:20%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дополнительная информация:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="time" placeholder="Дополнительная информация о свидетеле/потерпевшем">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="info1" placeholder="Дополнительная информация о свидетеле/потерпевшем">
                                 </div>
                             </td>
                         </tr>
                     </tbody>
                 </table><br>
                 <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Данные опроса или запись допроса свидетелей / потерпевших:</span><br>
-                <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 10px"><textarea name="incident_description" placeholder="Описание ситуации со слов потерпевшего; СС или чатлог" cols="78"></textarea></div> 
+                <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 10px"><textarea name="opros1" placeholder="Описание ситуации со слов потерпевшего; СС или чатлог" cols="78"></textarea></div> 
                 </p>
             </details>
             <details>
@@ -208,14 +208,14 @@
                     <table width="100%">
                         <tbody>
                             <tr>
-                                <input type="checkbox" class="checkbox" name="accept1" /><span style="font-size: 90%; line-height: 116%;">Жив</span>
+                                <input type="checkbox" class="checkbox" name="status21" /><span style="font-size: 90%; line-height: 116%;">Жив</span>
                                 </td>
                             </tr><br>
                             <tr>
-                                <input type="checkbox" class="checkbox" name="accept2" /><span style="font-size: 90%; line-height: 116%;">Мёртв</span>
+                                <input type="checkbox" class="checkbox" name="status22" /><span style="font-size: 90%; line-height: 116%;">Мёртв</span>
                             </td><br>
                             <tr>
-                                <input type="checkbox" class="checkbox" name="accept3" /><span style="font-size: 90%; line-height: 116%;">Незаконно задержан</span>
+                                <input type="checkbox" class="checkbox" name="status23" /><span style="font-size: 90%; line-height: 116%;">Незаконно задержан</span>
                             </td><br>
                         </tr>
                         </tbody>
@@ -224,15 +224,15 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Имя, фамилия</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="suspect_name" placeholder="Имя Фамилия">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="name2" placeholder="Имя Фамилия">
                                 </div>
                             </td>
                             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Номер телефона:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="suspect_name" placeholder="+ 1 (735) XX-YYYYY">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="phone2" placeholder="+ 1 (735) XX-YYYYY">
                                 </div>
                             </td>
                             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Страница ВКонтакте:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="vkurl" placeholder="https://vk.com/....." />
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="vk2" placeholder="https://vk.com/....." />
                                 </div>
                             </td>
                         </tr>
@@ -242,18 +242,18 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:20%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Нанесенный ущерб:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="date" placeholder="Сумма ущерба или полученные травмы">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="userb2" placeholder="Сумма ущерба или полученные травмы">
                                 </div>
                             </td>
                             <td style="vertical-align: top; width:20%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дополнительная информация:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="time" placeholder="Дополнительная информация о свидетеле/потерпевшем">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="info2" placeholder="Дополнительная информация о свидетеле/потерпевшем">
                                 </div>
                             </td>
                         </tr>
                     </tbody>
                 </table><br>
                 <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Данные опроса или запись допроса свидетелей / потерпевших:</span><br>
-                <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 10px"><textarea name="incident_description" placeholder="Описание ситуации со слов потерпевшего; СС или чатлог" cols="78"></textarea></div> 
+                <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 10px"><textarea name="opros2" placeholder="Описание ситуации со слов потерпевшего; СС или чатлог" cols="78"></textarea></div> 
                 </p>
             </details>
             <details>
@@ -262,14 +262,14 @@
                     <table width="100%">
                         <tbody>
                             <tr>
-                                <input type="checkbox" class="checkbox" name="accept1" /><span style="font-size: 90%; line-height: 116%;">Жив</span>
+                                <input type="checkbox" class="checkbox" name="status31" /><span style="font-size: 90%; line-height: 116%;">Жив</span>
                                 </td>
                             </tr><br>
                             <tr>
-                                <input type="checkbox" class="checkbox" name="accept2" /><span style="font-size: 90%; line-height: 116%;">Мёртв</span>
+                                <input type="checkbox" class="checkbox" name="status32" /><span style="font-size: 90%; line-height: 116%;">Мёртв</span>
                             </td><br>
                             <tr>
-                                <input type="checkbox" class="checkbox" name="accept3" /><span style="font-size: 90%; line-height: 116%;">Незаконно задержан</span>
+                                <input type="checkbox" class="checkbox" name="status33" /><span style="font-size: 90%; line-height: 116%;">Незаконно задержан</span>
                             </td><br>
                         </tr>
                         </tbody>
@@ -278,15 +278,15 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Имя, фамилия</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="suspect_name" placeholder="Имя Фамилия">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="name3" placeholder="Имя Фамилия">
                                 </div>
                             </td>
                             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Номер телефона:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="suspect_name" placeholder="+ 1 (735) XX-YYYYY">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="phone3" placeholder="+ 1 (735) XX-YYYYY">
                                 </div>
                             </td>
                             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Страница ВКонтакте:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="vkurl" placeholder="https://vk.com/....." />
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="vk3" placeholder="https://vk.com/....." />
                                 </div>
                             </td>
                         </tr>
@@ -296,18 +296,18 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:20%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Нанесенный ущерб:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="date" placeholder="Сумма ущерба или полученные травмы">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="userb3" placeholder="Сумма ущерба или полученные травмы">
                                 </div>
                             </td>
                             <td style="vertical-align: top; width:20%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дополнительная информация:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="time" placeholder="Дополнительная информация о свидетеле/потерпевшем">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="info3" placeholder="Дополнительная информация о свидетеле/потерпевшем">
                                 </div>
                             </td>
                         </tr>
                     </tbody>
                 </table><br>
                 <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Данные опроса или запись допроса свидетелей / потерпевших:</span><br>
-                <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 10px"><textarea name="incident_description" placeholder="Описание ситуации со слов потерпевшего; СС или чатлог" cols="78"></textarea></div> 
+                <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 10px"><textarea name="opros3" placeholder="Описание ситуации со слов потерпевшего; СС или чатлог" cols="78"></textarea></div> 
                 </p>
             </details>
             <details>
@@ -316,14 +316,14 @@
                     <table width="100%">
                         <tbody>
                             <tr>
-                                <input type="checkbox" class="checkbox" name="accept1" /><span style="font-size: 90%; line-height: 116%;">Жив</span>
+                                <input type="checkbox" class="checkbox" name="status41" /><span style="font-size: 90%; line-height: 116%;">Жив</span>
                                 </td>
                             </tr><br>
                             <tr>
-                                <input type="checkbox" class="checkbox" name="accept2" /><span style="font-size: 90%; line-height: 116%;">Мёртв</span>
+                                <input type="checkbox" class="checkbox" name="status42" /><span style="font-size: 90%; line-height: 116%;">Мёртв</span>
                             </td><br>
                             <tr>
-                                <input type="checkbox" class="checkbox" name="accept3" /><span style="font-size: 90%; line-height: 116%;">Незаконно задержан</span>
+                                <input type="checkbox" class="checkbox" name="status43" /><span style="font-size: 90%; line-height: 116%;">Незаконно задержан</span>
                             </td><br>
                         </tr>
                         </tbody>
@@ -332,15 +332,15 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Имя, фамилия</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="suspect_name" placeholder="Имя Фамилия">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="name4" placeholder="Имя Фамилия">
                                 </div>
                             </td>
                             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Номер телефона:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="suspect_name" placeholder="+ 1 (735) XX-YYYYY">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="phone4" placeholder="+ 1 (735) XX-YYYYY">
                                 </div>
                             </td>
                             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Страница ВКонтакте:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="vkurl" placeholder="https://vk.com/....." />
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="vk4" placeholder="https://vk.com/....." />
                                 </div>
                             </td>
                         </tr>
@@ -350,18 +350,18 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:20%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Нанесенный ущерб:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="date" placeholder="Сумма ущерба или полученные травмы">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="userb4" placeholder="Сумма ущерба или полученные травмы">
                                 </div>
                             </td>
                             <td style="vertical-align: top; width:20%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дополнительная информация:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="time" placeholder="Дополнительная информация о свидетеле/потерпевшем">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="info4" placeholder="Дополнительная информация о свидетеле/потерпевшем">
                                 </div>
                             </td>
                         </tr>
                     </tbody>
                 </table><br>
                 <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Данные опроса или запись допроса свидетелей / потерпевших:</span><br>
-                <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 10px"><textarea name="incident_description" placeholder="Описание ситуации со слов потерпевшего; СС или чатлог" cols="78"></textarea></div> 
+                <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 10px"><textarea name="opros4" placeholder="Описание ситуации со слов потерпевшего; СС или чатлог" cols="78"></textarea></div> 
                 </p>
             </details>
             <details>
@@ -370,14 +370,14 @@
                     <table width="100%">
                         <tbody>
                             <tr>
-                                <input type="checkbox" class="checkbox" name="accept1" /><span style="font-size: 90%; line-height: 116%;">Жив</span>
+                                <input type="checkbox" class="checkbox" name="status51" /><span style="font-size: 90%; line-height: 116%;">Жив</span>
                                 </td>
                             </tr><br>
                             <tr>
-                                <input type="checkbox" class="checkbox" name="accept2" /><span style="font-size: 90%; line-height: 116%;">Мёртв</span>
+                                <input type="checkbox" class="checkbox" name="status52" /><span style="font-size: 90%; line-height: 116%;">Мёртв</span>
                             </td><br>
                             <tr>
-                                <input type="checkbox" class="checkbox" name="accept3" /><span style="font-size: 90%; line-height: 116%;">Незаконно задержан</span>
+                                <input type="checkbox" class="checkbox" name="status53" /><span style="font-size: 90%; line-height: 116%;">Незаконно задержан</span>
                             </td><br>
                         </tr>
                         </tbody>
@@ -386,15 +386,15 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Имя, фамилия</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="suspect_name" placeholder="Имя Фамилия">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="name5" placeholder="Имя Фамилия">
                                 </div>
                             </td>
                             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Номер телефона:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="suspect_name" placeholder="+ 1 (735) XX-YYYYY">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="phone5" placeholder="+ 1 (735) XX-YYYYY">
                                 </div>
                             </td>
                             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Страница ВКонтакте:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="vkurl" placeholder="https://vk.com/....." />
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="vk5" placeholder="https://vk.com/....." />
                                 </div>
                             </td>
                         </tr>
@@ -404,18 +404,18 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:20%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Нанесенный ущерб:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="date" placeholder="Сумма ущерба или полученные травмы">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="userb5" placeholder="Сумма ущерба или полученные травмы">
                                 </div>
                             </td>
                             <td style="vertical-align: top; width:20%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дополнительная информация:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="time" placeholder="Дополнительная информация о свидетеле/потерпевшем">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="info5" placeholder="Дополнительная информация о свидетеле/потерпевшем">
                                 </div>
                             </td>
                         </tr>
                     </tbody>
                 </table><br>
                 <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Данные опроса или запись допроса свидетелей / потерпевших:</span><br>
-                <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 10px"><textarea name="incident_description" placeholder="Описание ситуации со слов потерпевшего; СС или чатлог" cols="78"></textarea></div> 
+                <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 10px"><textarea name="opros5" placeholder="Описание ситуации со слов потерпевшего; СС или чатлог" cols="78"></textarea></div> 
                 </p>
             </details>
             
@@ -424,15 +424,17 @@
                     <div align="center">ПОКАЗАНИЯ ПОДОЗРЕВАЕМОГО:</div>
                 </span></span></div>
         <div style="border: 1px solid #ffffff; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(255, 255, 255);"><span style="color: #000000">
-            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="suspect_name" placeholder="Протокол допроса подозреваемого"></div>
+            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="suspect_opros" placeholder="Протокол допроса подозреваемого"></div>
         </div><br>
         <div style="padding: 10px; background-color: #0F283E;"><span><span style="color: #FFFFFF">
                     <div align="center">УЛИКИ:</div>
                 </span></span></div>
         <div style="border: 1px solid #ffffff; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(255, 255, 255);"><span style="color: #000000">
-            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="suspect_name" placeholder="Список найденных доказательств и то, какое отношение они имеют к делу"></div>
+            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="uliks" placeholder="Список найденных доказательств и то, какое отношение они имеют к делу"></div>
         </div><br>
         </div>
+    </div>
+        
        
 
     <div class="btn-container">
@@ -485,17 +487,70 @@
     
 
     <script>
-        String.prototype.capitalize = function () {
-			return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase();
-		}
-        
+        function capitalizeFirstLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+        }
+
         function generatePostTitle() {
-            h_output = "[АРЕСТ] Ник-нейм офицера | Ник-нейм задержанного";
+            var number = document.getElementsByName("number")[0].value;
+            var suspect = capitalizeFirstLetter(document.getElementsByName("suspect")[0].value);
+            var detective_name = capitalizeFirstLetter(document.getElementsByName("detective_name")[0].value);
+            var support_name = capitalizeFirstLetter(document.getElementsByName("support_name")[0].value);
+        
+            var h_output = "Кейс-файл #" + number + " " + suspect;
+
+            var contributors = [];
+            if (detective_name) {
+                contributors.push(detective_name);
+            }
+            if (support_name) {
+                contributors.push(support_name);
+            }
+            
+            if (contributors.length > 0) {
+                h_output += ' (' + contributors.join(', ') + ')';
+            }
+            
             return h_output;
+        }
+        function form2dict(form) {
+            var values = form.querySelectorAll('[name]');
+            var data = {};
+            for (var i = 0; i < values.length; i++) {
+                if (values[i].classList.contains('datepicker')) {
+                    data[values[i].getAttribute('name')] = values[i].value.toUpperCase() || 'N/A';
+                } else if (values[i].type == 'checkbox') {
+                    data[values[i].getAttribute('name')] = values[i].checked ? ('X') : '';
+                } else if (values[i].type == 'radio') {
+                    let name = values[i].getAttribute('name')
+                    let res = [].filter.call(document.querySelectorAll(`[name='${name}']`), item => item.checked)
+                    if (name == 'education') {
+                        if (res.length) {
+                            try {
+                              if (debilTest()) {
+                                data[name] = res[0].labels[0].innerText + "."
+                              } else {
+                                data[name] = res[0].labels[0].innerText
+                              }
+                            } 
+                            catch(err) {
+                              console.log(err.message)
+                            }
+                        } else {
+                          data[name] = 'N/A'
+                        }
+                    } else {
+                        data[name] = (res.length && res[0].labels[0].innerText === 'Да') ? 'X' : ''
+                    }
+                } else {
+                    data[values[i].getAttribute('name')] = values[i].value || values[i].innerText || 'N/A';
+                }
+            }
+            return data;
         }
 
         MicroModal.init();
-        window.__bbcodeurl = '/bbforms/lscsd disabled/incident_report.txt';
+        window.__bbcodeurl = '/bbforms/lspd/rac.txt';
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

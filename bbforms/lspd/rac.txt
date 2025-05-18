@@ -1,38 +1,69 @@
-﻿[doc][center][img]https://i.imgur.com/qQU4nxH.png[/img][/center]
-[center]LOS SANTOS POLICE DEPARTMENT
-REPORT A CRIME
+﻿[background=#0F283E][textarea][float=right][image=90]https://i.imgur.com/e3nGYvE.png[/image][/float][center][size=150][b]ДЕПАРТАМЕНТ ПОЛИЦИИ САН ФИЕРРО[/b][/size]
+[size=150]ОФИС КАДРОВ[/size]
+[size=140]УПРАВЛЕНИЕ РИСКАМИ[/size]
+[size=130]ОТДЕЛ ВНУТРЕННИХ РАССЛЕДОВАНИЙ[/size]
+[size=120]КЕЙС-ФАЙЛ #%textarea:number%[/size][/center]
 
-[size=120][b]APPLICATION[/b][/size][/center][borderb=#000][/borderb]
-[justify]Эта форма используется только для подачи заявления о преступлении в юрисдикции Департамета полиции города Лос-Сантос. Департамент полиции города Лос-Сантос не расследует дела, произошедшие за пределами его юрисдикции.[/justify]
-[doc_b=ИНФОРМАЦИЯ О ВАС]
+[hr][/hr]
+[list][box=#0F283E][color=#FFFFFF][center][size=110]ИНФОРМАЦИЯ О ДЕЛЕ[/size][/center][/color][/box]
+[list][coll3][b]Ответственный следователь:[/b]
+[a]%textarea:detective_name%[/a]|[b]Участвующие следователи:[/b]
+[a]%textarea:support_name%[/a]|[b]Статус дела:[/b]
+[b][box=#F6F6F6F6][size=100]%textarea:status%[/size][/b][/box][/coll3][coll3][b]Дата инцидента:[/b]
+[a]%textarea:date%[/a]|[b]Время:[/b]
+[a]%textarea:time%[/a]|[b]Локация:[/b]
+[a]%textarea:locate%[/a][/coll3][/list]
 
-[coll4][a=Имя]%text:name%[/a]|[a=Второе имя]%text:second_name%[/a]|[a=Фамилия]%text:surname%[/a]|[a=Пол]%text:sex%[/a][/coll4]
-[coll3][a=Дата рождения]%text:birth%[/a]|[a=Телефон]%text:telephone%[/a]|[a=Email]%text:email%[/a][/coll3]
-[a=Адрес]%text:adress%[/a][/doc_b]
 
-[doc_b=ИНФОРМАЦИЯ ОБ ИНЦИДЕНТЕ]
+[box=#0F283E][color=#FFFFFF][center][size=110]ИНФОРМАЦИЯ О ПОДОЗРЕВАЕМЫХ[/size][/center][/color][/box]
+[list][coll3][b]Подозревается в статьях:[/b]
+[a]%textarea:pg_uk%[/a]|[b]Подозреваемый офицер:[/b]
+[a]%textarea:suspect%[/a]|[b]Характеристика от руководства:[/b]
+[quote]%textarea:harka%[/quote][/coll3]
+[coll3][b]Личное дело офицера:[/b]
+[a][url=%textarea:delo_cpd%]Личное дело[/url][/a]|[b]Проходил ли ранее по делам:[/b]
+[a]%textarea:dela%[/a]|[b]Классификация дела:[/b]
+[box=#F6F6F6F6][a][%textarea:class1%] внутреннее;
+[%textarea:class2%] административное;
+[%textarea:class3%] уголовное;
+[%textarea:class4%] с пострадавшим офицером[/a][/box][/coll3][/list]
 
-[coll3][a=Дата инцидента]%text:incident_date%[/a]|[a=Время]%text:incident_time%[/a]|[a=Локация]%text:incident_location%[/a][/coll3]
-[size=90][b]Подавалось ли это заявление или связанное с ним ранее?[/b]
-[%text:checkbox1%] Да    [%text:checkbox2%] Нет[/size][/doc_b]
 
-[doc_b=ИНФОРМАЦИЯ О ПОДОЗРЕВАЕМЫХ]
+[border=#0F283E][size=120][b]ДЕЙСТВУЮЩИЕ САНКЦИИ НА ВРЕМЯ РАССЛЕДОВАНИЯ[/b][/size][/border]
+[list][a]%textarea:sanction%[/a][/list]
 
-[size=90][b]Вы знаете имена подозреваемых? Если да, перечислите любых из них.[/b]
-[%text:checkbox3%] Да    [%text:checkbox4%] Нет[/size]
 
-[coll][a=Подозреваемый 1 & имя, фамилия, примерное описание]%text:suspect1%[/a]|[a=Подозреваемый 2 & имя, фамилия, примерное описание]%text:suspect2%[/a][/coll]
-[coll][a=Подозреваемый 3 & имя, фамилия, примерное описание]%text:suspect3%[/a]|[a=Подозреваемый 4 & имя, фамилия, примерное описание]%text:suspect4%[/a][/coll][/doc_b]
+[box=#0F283E][color=#FFFFFF][center][size=110]ПОДРОБНОЕ ОПИСАНИЕ СИТУАЦИИ[/size][/center][/color][/box]
+[list][a]%textarea:incident_description%[/a][/list]
 
-[doc_b=ИНФОРМАЦИЯ О СВИДЕТЕЛЯХ]
 
-[size=90][b]Присутствовали ли на ситуации свидетели и знаете ли Вы их имена и контакты? Если да, перечислите любых из них.[/b]
-[%text:checkbox5%] Да    [%text:checkbox6%] Нет[/size]
+[box=#0F283E][color=#FFFFFF][center][size=110]ИНФОРМАЦИЯ О СВИДЕТЕЛЯХ, ПОТЕРПЕВШИХ[/size][/center][/color][/box]
+[spoiler="Свидетель\потерпевший #1 - %textarea:name1%"][list][coll4][b]Имя Фамилия, номер телефона:[/b][a][url=%textarea:vk1%]%textarea:name1%, %textarea:phone1%[/url][/a]|[b]Нанесенный ущерб:[/b][a]%textarea:userb1%[/a]|[b]Состояние:[/b][box=#F6F6F6F6][a][%textarea:status11%] жив;
+[%textarea:status12%] мёртв;
+[%textarea:status13%] незаконно задержан.[/a][/box]|[b]Дополнительная информация:[/b][a]Дополнительная информация о свидетеле/потерпевшем[/a][/coll4]
+[spoiler="Данные опроса или запись допроса свидетелей / потерпевших"]Описание ситуации со слов потерпевшего; СС или чатлог[/spoiler][/list][/spoiler]
+[spoiler="Свидетель\потерпевший #2 - %textarea:name2%"][list][coll4][b]Имя Фамилия, номер телефона:[/b][a][url=%textarea:vk2%]%textarea:name2%, %textarea:phone2%[/url][/a]|[b]Нанесенный ущерб:[/b][a]%textarea:userb2%[/a]|[b]Состояние:[/b][box=#F6F6F6F6][a][%textarea:status21%] жив;
+[%textarea:status22%] мёртв;
+[%textarea:status23%] незаконно задержан.[/a][/box]|[b]Дополнительная информация:[/b][a]Дополнительная информация о свидетеле/потерпевшем[/a][/coll4]
+[spoiler="Данные опроса или запись допроса свидетелей / потерпевших"]Описание ситуации со слов потерпевшего; СС или чатлог[/spoiler][/list][/spoiler]
+[spoiler="Свидетель\потерпевший #3 - %textarea:name3%"][list][coll4][b]Имя Фамилия, номер телефона:[/b][a][url=h%textarea:vk3%]%textarea:name3%, %textarea:phone3%[/url][/a]|[b]Нанесенный ущерб:[/b][a]%textarea:userb3%[/a]|[b]Состояние:[/b][box=#F6F6F6F6][a][%textarea:status31%] жив;
+[%textarea:status32%] мёртв;
+[%textarea:status33%] незаконно задержан.[/a][/box]|[b]Дополнительная информация:[/b][a]Дополнительная информация о свидетеле/потерпевшем[/a][/coll4]
+[spoiler="Данные опроса или запись допроса свидетелей / потерпевших"]Описание ситуации со слов потерпевшего; СС или чатлог[/spoiler][/list][/spoiler]
+[spoiler="Свидетель\потерпевший #4 - %textarea:name4%"][list][coll4][b]Имя Фамилия, номер телефона:[/b][a][url=%textarea:vk4%]%textarea:name4%, %textarea:phone4%[/url][/a]|[b]Нанесенный ущерб:[/b][a]%textarea:userb4%[/a]|[b]Состояние:[/b][box=#F6F6F6F6][a][%textarea:status41%] жив;
+[%textarea:status42%] мёртв;
+[%textarea:status43%] незаконно задержан.[/a][/box]|[b]Дополнительная информация:[/b][a]Дополнительная информация о свидетеле/потерпевшем[/a][/coll4]
+[spoiler="Данные опроса или запись допроса свидетелей / потерпевших"]Описание ситуации со слов потерпевшего; СС или чатлог[/spoiler][/list][/spoiler]
+[spoiler="Свидетель\потерпевший #5 - %textarea:name5%"][list][coll4][b]Имя Фамилия, номер телефона:[/b][a][url=%textarea:vk5%]%textarea:name5%, %textarea:phone5%[/url][/a]|[b]Нанесенный ущерб:[/b][a]%textarea:userb5%[/a]|[b]Состояние:[/b][box=#F6F6F6F6][a][%textarea:status51%] жив;
+[%textarea:status52%] мёртв;
+[%textarea:status53%] незаконно задержан.[/a][/box]|[b]Дополнительная информация:[/b][a]Дополнительная информация о свидетеле/потерпевшем[/a][/coll4]
+[spoiler="Данные опроса или запись допроса свидетелей / потерпевших"]Описание ситуации со слов потерпевшего; СС или чатлог[/spoiler][/list][/spoiler]
 
-[coll][a=Свидетель 1 Имя, Телефон]%text:witness1%[/a]|[a=Свидетель 2 Имя, Телефон]%text:witness2%[/a][/coll]
-[coll][a=Свидетель 3 Имя, Телефон]%text:witness3%[/a]|[a=Свидетель 4 Имя, Телефон]%text:witness4%[/a][/coll][/doc_b]
 
-[doc_b=СВОДКА]
+[box=#0F283E][color=#FFFFFF][center][size=110]ПОКАЗАНИЯ ПОДОЗРЕВАЕМОГО[/size][/center][/color][/box]
+[list][spoiler]%textarea:suspect_opros%[/spoiler][/list]
 
-[size=90]Просьба представить информацию об инциденте. Включить дополнительных свидетелей, очевидцев, подозреваемых и полное описание произошедшего.[/size]
-[textarea=#ccc][color=#555555][justify]%textarea:info%[/justify][/color][/textarea][/doc_b][/doc]
+[box=#0F283E][color=#FFFFFF][center][size=110]УЛИКИ[/size][/center][/color][/box]
+[list][a]%textarea:uliks%[/a]
+
+[/list][/list][/textarea][/background] 
