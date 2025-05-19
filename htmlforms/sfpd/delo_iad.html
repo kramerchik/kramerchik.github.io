@@ -67,11 +67,10 @@
                             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ЗВАНИЕ:</span><br>
                             
                                 <select name="rang" style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-                                    <option value="ОФИЦЕР ПОЛИЦИИ ВТОРОЙ КВАЛИФИКАЦИИ">Police Officer Q2</option>
-                                    <option value="ОФИЦЕР ПОЛИЦИИ ТРЕТЬЕЙ КВАЛИФИКАЦИИ">Police Officer Q3</option>
-                                    <option value="ОФИЦЕР ПОЛИЦИИ ЧЕТВЕРТОЙ КВАЛИФИКАЦИИ">Police Officer Q4</option>
-                                    <option value="СЕРЖАНТ ПОЛИЦИИ">Police Sergeant</option>
-                                    <option value="ЛЕЙТЕНАНТ ПОЛИЦИИ">Lieutenant</option>
+                                    <option value="АССИСТЕНТ ИНСПЕКТОРА">Assistant Inspector</option>
+                                    <option value="ИНСПЕКТОР">Inspector</option>
+                                    <option value="СЕРЖАНТ">Police Sergeant</option>
+                                    <option value="ЛЕЙТЕНАНТ">Lieutenant</option>
                                     <option value="КАПИТАН ПОЛИЦИИ">Captain</option>
                                 </select>
                             </td>
@@ -79,12 +78,10 @@
                                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
                                     <input type="text" name="justification" list="justification" placeholder="Выбрать или заполнить" />
                                     <datalist id="justification">
-                                        <option value="ИНСТРУКТОР НА СТАЖИРОВКЕ">
-                                        <option value="ВСПОМОГАТЕЛЬНЫЙ ИНСТРУКТОР">
-                                        <option value="ИНСТРУКТОР">
-                                        <option value="КООРДИНАТОР ПО ПРОГРАММАМ КВАЛИФИКАЦИЙ">
-                                        <option value="КУРАТОР ТРЕНИРОВОЧНОГО ОТДЕЛА">
-                                        <option value="КОМАНДИР ТРЕНИРОВОЧНОГО ОТДЕЛА">
+                                        <option value="ИНСПЕКТОР НА СТАЖИРОВКЕ">
+                                        <option value="ИНСПЕКТОР">
+                                        <option value="КОМАНДИР СЕКЦИИ ВНУТРЕННИХ РАССЛЕДОВАНИЙ">
+                                        <option value="КОМАНДИР ОТДЕЛА ВНУТРЕННИХ РАССЛЕДОВАНИЙ">
                                     </datalist>
                                 </div>
                             </td>
@@ -170,12 +167,12 @@
     
     <script>
         function generatePostTitle() {
-            h_output = "Police Officer Q0 — Name Surname";
+            h_output = "Assistant Inspector — Name Surname";
             return h_output;
         }
 
         MicroModal.init();
-        window.__bbcodeurl = '/bbforms/lscsd disabled/delo_ted.txt';
+        window.__bbcodeurl = '/bbforms/lspd/delo_iad.txt';
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
