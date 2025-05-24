@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/common/css/style.css">
+    <link rel="stylesheet" href="/common/css/micromodal.css">
+    <script src="/common/js/micromodal.min.js"></script>
+    <script src="/common/js/utils.js"></script>
+
+    <title>Генератор личного дела IAD - SFPD</title>
+    <style>
+        .btn {
+            display: block; /* Делает кнопку блоковым элементом */
+            width: 300px; /* Устанавливает ширину кнопок */
+            padding: 10px; /* Добавляет отступы внутри кнопки */
+            margin: 10px 0; /* Добавляет отступы между кнопками */
+            text-align: center; /* Центрует текст внутри кнопки */
+            color: white; /* Цвет текста кнопки */
+            background-color: #007bff; /* Цвет фона кнопки */
+            text-decoration: none; /* Убирает подчеркивание для ссылок */
+            border-radius: 3px; /* Закругляет углы кнопок */
+        }
+
+        .btn.disabled {
+            background-color: #6c757d; /* Цвет кнопки в отключенном состоянии */
+            cursor: not-allowed; /* Указывает, что кнопка не активна */
+        }
+    </style>
+</head>
+  <div class="form" style="border: 1px solid #0F283E; padding: 10px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <div align="center">
+                    </div>
+                    <td style="vertical-align: centered_text; width:100%;  color: rgb(0, 0, 0); ">
+                        <div align="center"><span style="font-weight: bold; font-size: 25px;">Программа полевой подготовки и оценивания</span> </div>
+                    </td>
+                    <td style="vertical-align: top; width:26%; padding-left:10px;"> <br>
+                        <div align="left"><span style="font-size: 85%; line-height: 116%; color: #0F283E;">
+                            </span></div>
+                    </td>
+                    <td style="vertical-align: top; width:26%; padding-right:15px; color: rgb(0, 0, 0);">
+                        <div align="right"> <img src="/favicon.png" height="150" width="150" class="" alt=""><br></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="border-bottom: 1px solid #0F283E; padding: 1px;"></div>
+        <div style="padding: 0px; background-color: #0F283E;"><span><span style="color: #FFFFFF">
+        </span></span></div><br>
+            <div align="center">
+                Заполняется наставником:
+                <a href="/htmlforms/sfpd/ftep/stajirovka.html" class="btn btn-primary">Офицер на стажировке</a>
+                <a href="/htmlforms/sfpd/fto.html" class="btn btn-primary disabled">Офицер на испытательном сроке</a>
+                Заполняется супервайзером:
+                <a href="/htmlforms/sfpd/fto.html" class="btn btn-primary disabled">Результат финального экзамена</a>
+                <a href="/htmlforms/sfpd/fto.html" class="btn btn-primary disabled">Повторное обучение</a>
+            </div>
+        </div>
+    
+</body>
+</html>
