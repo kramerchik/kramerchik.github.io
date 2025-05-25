@@ -1,0 +1,37 @@
+[background=#0F283E][textarea][float=left][image=170]https://www.upload.ee/image/16052073/____________2023-12-14_201535302.png[/image][image=120]https://www.upload.ee/image/16052149/____________2023-12-14_203606471.png[/image][/float]
+[size=150][right][b]Департамент полиции Сан-Фиерро[/b][/size]
+[size=100][b]Бюро полевых операций[/b][/size]
+[size=80][b]5-ая станция Гарвера[/b][/size]
+[size=80][b]Программа полевой подготовки и оценивания[/b][/right][/size]
+[hr][/hr]
+[box=#0F283E][color=#FFFFFF][center][size=110]ОСНОВНЫЕ ДАННЫЕ[/size][/center][/color][/box]
+[list][coll][b]Стажёр:[/b][center][a]%text:stajer%[/a][/center]
+[b]Куратор:[/b][center][a]%text:kurator%[/a][/center]|[b]День по счёту:[/b]
+[a]%text:date_stajer%[/a][b]Оценка: [size=250][center]%text:global%[/center][/size][/b][/coll][/list]
+
+[box=#0F283E][color=#FFFFFF][center][size=110]ЗАМЕЧАНИЯ[/size][/center][/color][/box]
+[list][a]%text:q2%[/a][/list]
+
+
+[box=#0F283E][color=#FFFFFF][center][size=110]ТАБЕЛЬ[/size][/center][/color][/box]
+[list][b]1. Процедурная часть[/b]
+[list][*] [b]1.1[/b] Знание теоретического материала - %text:medic%
+[*] [b]1.2[/b] Применение теории на практике - %text:medic1%[/list]
+
+[b]2. Интеграционная часть[/b]
+[list][*] [b]2.1[/b] Вовлечённость в коллектив (проявление инициативы, взаимодействие с составом) - %text:medic11%
+[*] [b]2.2[/b] Понимание правил, традиций, принципов и политики сообщества - %text:medic12%
+[*] [b]2.3[/b] Вовлеченность в жизнь сообщества - %text:medic13%[/list]
+
+[b]3. Коммуникационная часть[/b]
+[list][*] [b]3.1[/b] Использование рации - %text:medic2%
+[*] [b]3.2[/b] Использование тактической радиоволны - %text:medic3%
+[*] [b]3.3[/b] Общение с гражданскими и коллегами - %text:medic4%
+[*] [b]3.4[/b] Координация - %text:medic5%[/list]
+
+[b]4. Вождение автомобиля[/b]
+[list][*] [b]4.1[/b] Штатный режим - %text:medic6%
+[*] [b]4.2[/b] Экстренный режим - %text:medic7%[/list][/list]
+
+[hr][/hr]
+[coll][center][size=100]%text:date%[/size][/center]|[right][image=200]%text:podpis%[/image][/right][/coll][/textarea][/background]
