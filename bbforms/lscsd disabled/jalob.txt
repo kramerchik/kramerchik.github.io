@@ -12,7 +12,7 @@
 [b]Детальная информация и описание:[/b][a]%text:name2_opic%[/a][/list][/list]
 
 [list][border=#0F283E][size=120][b]ИНФОРМАЦИЯ ОБ ИНЦИДЕНТЕ[/b][/size][/border]
-[list][coll3][b]Дата:[/b][a]%text:date%[/a]|[b]Время:[/b][a]%text:time%[/a]|[b]Место проиcшествия:[/b][a]%text:locate_inc%[/a][/coll3]
+[list][coll3][b]Дата:[/b][a]%text:incident_date%[/a]|[b]Время:[/b][a]%text:time%[/a]|[b]Место проиcшествия:[/b][a]%text:locate_inc%[/a][/coll3]
 [b]Детальное описание произошедшего:[/b][a]%text:incident_description%[/a]
 
 [coll][b]Свидетель:[/b][a]%text:svid1%[/a]|[b]Свидетель:[/b][a]%text:svid2%[/a][/coll]
