@@ -430,7 +430,7 @@
                     <div align="center">УЛИКИ:</div>
                 </span></span></div>
         <div style="border: 1px solid #ffffff; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(255, 255, 255);"><span style="color: #000000">
-            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="uliks" placeholder="Список найденных доказательств и то, какое отношение они имеют к делу"></div>
+            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 10px"><textarea name="incident_description" placeholder="Список найденных доказательств и то, какое отношение они имеют к делу" cols="78"></textarea></div> 
         </div><br>
         </div>
     </div>
@@ -491,12 +491,18 @@
         return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
         }
 
+        function capitalizeWords(str) {
+            return str.split(' ').map(function(word) {
+                return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+            }).join(' ');
+        }
+
         function generatePostTitle() {
             var number = document.getElementsByName("number")[0].value;
-            var suspect = capitalizeFirstLetter(document.getElementsByName("suspect")[0].value);
-            var detective_name = capitalizeFirstLetter(document.getElementsByName("detective_name")[0].value);
-            var support_name = capitalizeFirstLetter(document.getElementsByName("support_name")[0].value);
-        
+            var suspect = document.getElementsByName("suspect")[0].value;
+            var detective_name = capitalizeWords(document.getElementsByName("detective_name")[0].value);
+            var support_name = capitalizeWords(document.getElementsByName("support_name")[0].value);
+
             var h_output = "Кейс-файл #" + number + " " + suspect;
 
             var contributors = [];

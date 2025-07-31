@@ -40,23 +40,23 @@
 [box=#0F283E][color=#FFFFFF][center][size=110]ИНФОРМАЦИЯ О СВИДЕТЕЛЯХ, ПОТЕРПЕВШИХ[/size][/center][/color][/box]
 [spoiler="Свидетель\потерпевший #1 - %textarea:name1%"][list][coll4][b]Имя Фамилия, номер телефона:[/b][a][url=%textarea:vk1%]%textarea:name1%, %textarea:phone1%[/url][/a]|[b]Нанесенный ущерб:[/b][a]%textarea:userb1%[/a]|[b]Состояние:[/b][box=#F6F6F6F6][a][%textarea:status11%] жив;
 [%textarea:status12%] мёртв;
-[%textarea:status13%] незаконно задержан.[/a][/box]|[b]Дополнительная информация:[/b][a]Дополнительная информация о свидетеле/потерпевшем[/a][/coll4]
+[%textarea:status13%] незаконно задержан.[/a][/box]|[b]Дополнительная информация:[/b][a]%textarea:info1%[/a][/coll4]
 [spoiler="Данные опроса или запись допроса свидетелей / потерпевших"]Описание ситуации со слов потерпевшего; СС или чатлог[/spoiler][/list][/spoiler]
 [spoiler="Свидетель\потерпевший #2 - %textarea:name2%"][list][coll4][b]Имя Фамилия, номер телефона:[/b][a][url=%textarea:vk2%]%textarea:name2%, %textarea:phone2%[/url][/a]|[b]Нанесенный ущерб:[/b][a]%textarea:userb2%[/a]|[b]Состояние:[/b][box=#F6F6F6F6][a][%textarea:status21%] жив;
 [%textarea:status22%] мёртв;
-[%textarea:status23%] незаконно задержан.[/a][/box]|[b]Дополнительная информация:[/b][a]Дополнительная информация о свидетеле/потерпевшем[/a][/coll4]
+[%textarea:status23%] незаконно задержан.[/a][/box]|[b]Дополнительная информация:[/b][a]%textarea:info2%[/a][/coll4]
 [spoiler="Данные опроса или запись допроса свидетелей / потерпевших"]Описание ситуации со слов потерпевшего; СС или чатлог[/spoiler][/list][/spoiler]
-[spoiler="Свидетель\потерпевший #3 - %textarea:name3%"][list][coll4][b]Имя Фамилия, номер телефона:[/b][a][url=h%textarea:vk3%]%textarea:name3%, %textarea:phone3%[/url][/a]|[b]Нанесенный ущерб:[/b][a]%textarea:userb3%[/a]|[b]Состояние:[/b][box=#F6F6F6F6][a][%textarea:status31%] жив;
+[spoiler="Свидетель\потерпевший #3 - %textarea:name3%"][list][coll4][b]Имя Фамилия, номер телефона:[/b][a][url=%textarea:vk3%]%textarea:name3%, %textarea:phone3%[/url][/a]|[b]Нанесенный ущерб:[/b][a]%textarea:userb3%[/a]|[b]Состояние:[/b][box=#F6F6F6F6][a][%textarea:status31%] жив;
 [%textarea:status32%] мёртв;
-[%textarea:status33%] незаконно задержан.[/a][/box]|[b]Дополнительная информация:[/b][a]Дополнительная информация о свидетеле/потерпевшем[/a][/coll4]
+[%textarea:status33%] незаконно задержан.[/a][/box]|[b]Дополнительная информация:[/b][a]%textarea:info3%[/a][/coll4]
 [spoiler="Данные опроса или запись допроса свидетелей / потерпевших"]Описание ситуации со слов потерпевшего; СС или чатлог[/spoiler][/list][/spoiler]
 [spoiler="Свидетель\потерпевший #4 - %textarea:name4%"][list][coll4][b]Имя Фамилия, номер телефона:[/b][a][url=%textarea:vk4%]%textarea:name4%, %textarea:phone4%[/url][/a]|[b]Нанесенный ущерб:[/b][a]%textarea:userb4%[/a]|[b]Состояние:[/b][box=#F6F6F6F6][a][%textarea:status41%] жив;
 [%textarea:status42%] мёртв;
-[%textarea:status43%] незаконно задержан.[/a][/box]|[b]Дополнительная информация:[/b][a]Дополнительная информация о свидетеле/потерпевшем[/a][/coll4]
+[%textarea:status43%] незаконно задержан.[/a][/box]|[b]Дополнительная информация:[/b][a]%textarea:info4%[/a][/coll4]
 [spoiler="Данные опроса или запись допроса свидетелей / потерпевших"]Описание ситуации со слов потерпевшего; СС или чатлог[/spoiler][/list][/spoiler]
 [spoiler="Свидетель\потерпевший #5 - %textarea:name5%"][list][coll4][b]Имя Фамилия, номер телефона:[/b][a][url=%textarea:vk5%]%textarea:name5%, %textarea:phone5%[/url][/a]|[b]Нанесенный ущерб:[/b][a]%textarea:userb5%[/a]|[b]Состояние:[/b][box=#F6F6F6F6][a][%textarea:status51%] жив;
 [%textarea:status52%] мёртв;
-[%textarea:status53%] незаконно задержан.[/a][/box]|[b]Дополнительная информация:[/b][a]Дополнительная информация о свидетеле/потерпевшем[/a][/coll4]
+[%textarea:status53%] незаконно задержан.[/a][/box]|[b]Дополнительная информация:[/b][a]%textarea:info5%[/a][/coll4]
 [spoiler="Данные опроса или запись допроса свидетелей / потерпевших"]Описание ситуации со слов потерпевшего; СС или чатлог[/spoiler][/list][/spoiler]
 
 
