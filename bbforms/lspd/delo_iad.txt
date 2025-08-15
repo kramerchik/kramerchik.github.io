@@ -1,22 +1,51 @@
-﻿[box=#0F283E][textarea][float=right][image=120]https://www.upload.ee/image/16213436/2344.png[/image][image=100]https://www.upload.ee/image/17636025/iadorbi.png[/image][/float][color=white]1
+﻿[background=#0F283E][textarea][float=right][image=120]https://www.upload.ee/image/16213436/2344.png[/image][image=100]https://www.upload.ee/image/17636025/iadorbi.png[/image][/float][color=white]1
 1[/color]
 [center][size=150][b]ДЕПАРТАМЕНТ ПОЛИЦИИ САН-ФИЕРРО[/b][/size]
 [size=130]ОТДЕЛ ВНУТРЕННИХ РАССЛЕДОВАНИЙ[/size][/center]
 
 [hr][/hr]
-[center][size=120]ЛИЧНОЕ ДЕЛО[/size][/center]
-[border=#0F283E][b]ОСНОВНАЯ ИНФОРМАЦИЯ[/b][/border]
+[center][size=120][b]ЛИЧНОЕ ДЕЛО[/b][/size][/center]
+[coll][list][center][image=500]%text:profilePhoto%[/image][/center]|СПЕЦИАЛЬНОЕ ПОЛИЦЕЙСКОЕ ЗВАНИЕ: [b]%text:rang%[/b]
+
+ДОЛЖНОСТЬ: [b]%text:justification%[/b]
+
+НОМЕР НАГРУДНОГО ЖЕТОНА: [b]#%text:number%[/b]
+
+АККРЕДИТОВАННОЕ ОГНЕСТРЕЛЬНОЕ ОРУЖИЕ: [b]%text:gun%[/b]
+
+ДАТА ЗАЧИСЛЕНИЯ: [b]%text:date%[/b][/coll][/list] 
+
+[box=#0F283E][border=#FFFFFF][b][color=#FFFFFF]I. ЛИЧНЫЕ ДАННЫЕ[/color][/b][/border][/box] 
 [list][coll3][b]ИМЯ[/b]
 [a]%text:first_name%[/a]|[b]ВТОРОЕ ИМЯ[/b]
 [a]%text:two_name%[/a]|[b]ФАМИЛИЯ[/b]
 [a]%text:surname%[/a][/coll3]
-[coll3][b]ДАТА ЗАЧИСЛЕНИЯ[/b]
-[a]%text:date%[/a]|[b]ЗВАНИЕ[/b]
-[a]%text:rang%[/a]|[b]ДОЛЖНОСТЬ[/b]
-[a]%text:justification%[/a][/coll3][/list]
+[coll3][b]ДАТА РОЖДЕНИЯ[/b]
+[a]%text:b-day%[/a]|[b]ПОЛ[/b]
+[a]%text:gender%[/a]|[b]МЕСТО РОЖДЕНИЯ[/b]
+[a]%text:locate_bday%[/a][/coll3]
+[coll3][b]КОНТАКТНЫЙ НОМЕР ТЕЛЕФОНА[/b]
+[a]%text:phone%[/a]|[b]ЭЛЕКТРОННАЯ ПОЧТА[/b]
+[a]%text:email%[/a]|[b]МЕСТО ПОСТОЯННОГО ПРОЖИВАНИЯ[/b]
+[a]%text:locate%[/a][/coll3]
+[/list]
 
-[border=#0F283E][b]ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ[/b][/border]
-[list][b]АДРЕС ПРОЖИВАНИЯ[/b]
-[a]%text:adress%[/a]
-[b]КОНТАКТНЫЙ НОМЕР ТЕЛЕФОНА[/b]
-[a]%text:phone%[/a][/list][/textarea][/box]
+[box=#0F283E][border=#FFFFFF][b][color=#FFFFFF]II. БИОГРАФИЧЕСКИЕ СВЕДЕНИЯ[/color][/b][/border][/box] 
+[list][b]ОБРАЗОВАНИЕ[/b]
+[a]%text:student%[/a]
+[b]ПРЕДЫДУЩИЕ МЕСТА РАБОТЫ[/b]
+[a]%text:jobs%[/a]
+[coll3][b]СЕМЕЙНОЕ ПОЛОЖЕНИЕ[/b]
+[a]%text:wedding%[/a]|[b]ВЛАДЕНИЕ ИНОСТРАННЫМИ ЯЗЫКАМИ[/b]
+[a]%text:russian%[/a]|[b]СВЕДЕНИЯ О ПРОХОЖДЕНИИ ВОЕННОЙ СЛУЖБЫ[/b]
+[a]%text:zet%[/a][/coll3][/list]
+
+[box=#0F283E][border=#FFFFFF][b][color=#FFFFFF]III. БЛИЗКИЕ РОДСТВЕННИКИ[/color][/b][/border][/box] 
+[b]Персона №1[/b]
+[list][a]%text:floor1%[/a][/list]
+
+[b]Персона №2[/b]
+[list][a]%text:floor2%[/a][/list]
+
+[b]Персона №3[/b]
+[list][a]%text:floor3%[/a][/list][/textarea][/background]

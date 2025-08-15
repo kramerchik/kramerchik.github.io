@@ -97,7 +97,7 @@ $(function () {
   });
 });
 
-function uploadImage(inputSelector, allowedSize = { w: 130, h: 150 }) {
+function uploadImage(inputSelector, allowedSize = { w: 230, h: 320 }) {
   const input = document.querySelector(inputSelector);
   if (!input) return Promise.reject();
 
