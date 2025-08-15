@@ -56,7 +56,7 @@
         <tr>
             <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">СПЕЦИАЛЬНОЕ ПОЛИЦЕЙСКОЕ ЗВАНИЕ</span>
                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-                    <select name="justification">
+                <select name="justification">
                     <option value="N/A" selected disabled hidden>Выберите один из вариантов</option>
                     <option value="АССИСТЕНТ ИНСПЕКТОРА">Assistant Inspector</option>
                     <option value="ИНСПЕКТОР ПОЛИЦИИ">Police Inspector</option>
@@ -284,10 +284,40 @@
          }
 
         function generatePostTitle() {
-            var h_output = "[BLS/MOTO/K9/AIR] ";
-            h_output = "[BLS/MOTO/K9/AIR] ";
-            return h_output;
-        }
+            function capitalizeTitle(s) {
+                s = (s || '').toString().trim().toLowerCase();
+                if (!s) return '';
+                // сохраняем разделители (пробел, дефис, апостроф) и капитализируем части
+                return s.split(/([ \-'])/).map(function(part) {
+                    if (part === ' ' || part === '-' || part === "'") return part;
+                    return part.charAt(0).toUpperCase() + part.slice(1);
+                }).join('');
+            }
+
+            var first_name = (document.getElementsByName("first_name")[0] || {}).value || "";
+            var two_name = (document.getElementsByName("two_name")[0] || {}).value || "";
+            var surname = (document.getElementsByName("surname")[0] || {}).value || "";
+
+            first_name = capitalizeTitle(first_name);
+            two_name = capitalizeTitle(two_name);
+            surname = capitalizeTitle(surname);
+
+            var select = document.getElementsByName("justification")[0];
+            var DGO = "";
+            if (select && select.selectedIndex > -1) {
+                var idx = select.selectedIndex;
+                // если placeholder на индексе 0 и он disabled, можно проверить и игнорировать
+                if (idx > 0 || (select.options[idx] && !select.options[idx].disabled)) {
+                    DGO = capitalizeTitle(select.options[idx].text || "");
+                }
+            }
+
+        var namePart = [first_name, two_name, surname].filter(Boolean).join(" ");
+        var h_output = (DGO ? DGO + " — " : "") + namePart;
+        return h_output;
+    }
+
+
 
          function form2dict(form) {
             var values = form.querySelectorAll('[name]');
