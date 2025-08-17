@@ -98,7 +98,7 @@
 </table>
 <br>
 <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">АККРЕДИТОВАННОЕ ОГНЕСТРЕЛЬНОЕ ОРУЖИЕ:</span><br>
-    <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="gun" placeholder="Полное наименование, серийный номер, калибр"></div>
+    <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" oninput="this.value = this.value.toUpperCase()"name="gun" placeholder="Полное наименование, серийный номер, калибр"></div>
 </td>
 <br><br>
 <div style="padding: 2px; background-color: #0F283E;">
@@ -129,7 +129,7 @@
                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text"  name="b-day" placeholder="МММ ДД, ГГГГ"/></div>
             </td>
             <td style="vertical-align: top; width:33%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">МЕСТО РОЖДЕНИЯ</span><br>
-                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="locate_bday" placeholder="Город, регион или округ, страна"/></div>
+                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" oninput="this.value = this.value.toUpperCase()"name="locate_bday" placeholder="Город, регион или округ, страна"/></div>
             </td>
             <td style="vertical-align: top; width:33%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ПОЛ</span><br>
                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
@@ -154,7 +154,7 @@
                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="email" placeholder="Заполнить"/></div>
             </td>
             <td style="vertical-align: top; width:33%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">МЕСТО ПОСТОЯННОГО ПРОЖИВАНИЯ</span><br>
-                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="locate" placeholder="Город, регион или округ, страна"/></div>
+                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" oninput="this.value = this.value.toUpperCase()"name="locate" placeholder="Город, регион или округ, страна"/></div>
             </td>
         </tr>
     </tbody>
@@ -168,7 +168,7 @@
     <tbody>
         <tr>
             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ИНФОРМАЦИЯ ОБ ОБРАЗОВАНИИ</span><br>
-                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="student" placeholder="Заполнить">
+                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" oninput="this.value = this.value.toUpperCase()"name="student" placeholder="Заполнить">
                 </div>
             </td>
         </tr>
@@ -179,7 +179,7 @@
     <tbody>
         <tr>
             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ИНФОРМАЦИЯ О ПРЕДЫДУЩИХ МЕСТАХ РАБОТЫ</span><br>
-                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="jobs" placeholder="Заполнить">
+                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" oninput="this.value = this.value.toUpperCase()"name="jobs" placeholder="Заполнить">
                 </div>
             </td>
         </tr>
@@ -193,20 +193,20 @@
                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
                     <select name="wedding">
                     <option value="N/A" selected disabled hidden>Выберите один из вариантов</option>
-                    <option value="Не в браке">Не в браке</option>
-                    <option value="Состоит в браке">Состоит в браке</option>
-                    <option value="Разведён(а)">Разведён(а)</option>
-                    <option value="Вдова/Вдовец">Вдова/Вдовец</option>
-                    <option value="Помолвлен(а)">Помолвлен(а)</option>
-                    <option value="Зарегистрированное партнёрство">Зарегистрированное партнёрство</option>
+                    <option value="НЕ В БРАКЕ">Не в браке</option>
+                    <option value="СОСТОИТ В БРАКЕ">Состоит в браке</option>
+                    <option value="РАЗВЕДЁН(А)">Разведён(а)</option>
+                    <option value="ВДОВА\ВДОВЕЦ">Вдова/Вдовец</option>
+                    <option value="ПОМОЛВЛЕН(А)">Помолвлен(а)</option>
+                    <option value="ЗАРЕГЕСТРИРОВАННОЕ ПАРТНЕРСТВО">Зарегистрированное партнёрство</option>
                 </select>
                 </div>
             </td>
             <td style="vertical-align: top; width:33%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ВЛАДЕНИЕ ИНОСТРАННЫМИ ЯЗЫКАМИ</span><br>
-                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="russian" placeholder="Какими, в какой степени"/></div>
+                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" oninput="this.value = this.value.toUpperCase()"name="russian" placeholder="Какими, в какой степени"/></div>
             </td>
             <td style="vertical-align: top; width:33%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">СВЕДЕНИЯ О ПРОХОЖДЕНИИ ВОЕННОЙ СЛУЖБЫ</span><br>
-                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="zet" placeholder="Где, когда, в каком звании"/></div>
+                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" oninput="this.value = this.value.toUpperCase()"name="zet" placeholder="Где, когда, в каком звании"/></div>
             </td>
         </tr>
     </tbody>
@@ -218,11 +218,11 @@
 <div align="left"><b> | III. БЛИЗКИЕ РОДСТВЕННИКИ</b></div>
 </span></span></div>
 <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Персона №1</span><br>
-<div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="floor1" placeholder="Полное имя, фамилия, второе имя, номер контактного телефона, электронная почта, кем приходится"/></div><br>
+<div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="floor1" oninput="this.value = this.value.toUpperCase()"placeholder="Полное имя, фамилия, второе имя, номер контактного телефона, электронная почта, кем приходится"/></div><br>
 <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Персона №2</span><br>
-<div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="floor2" placeholder="Полное имя, фамилия, второе имя, номер контактного телефона, электронная почта, кем приходится"/></div><br>
+<div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="floor2" oninput="this.value = this.value.toUpperCase()"placeholder="Полное имя, фамилия, второе имя, номер контактного телефона, электронная почта, кем приходится"/></div><br>
 <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Персона №3</span><br>
-<div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="floor3" placeholder="Полное имя, фамилия, второе имя, номер контактного телефона, электронная почта, кем приходится"/></div>
+<div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="floor3" oninput="this.value = this.value.toUpperCase()"placeholder="Полное имя, фамилия, второе имя, номер контактного телефона, электронная почта, кем приходится"/></div>
 
 
 
