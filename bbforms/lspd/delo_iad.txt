@@ -41,11 +41,11 @@
 [a]%text:zet%[/a][/coll3][/list]
 
 [box=#0F283E][border=#FFFFFF][b][color=#FFFFFF]III. БЛИЗКИЕ РОДСТВЕННИКИ[/color][/b][/border][/box] 
-[b]Персона №1[/b]
+[b]ПЕРСОНА №1[/b]
 [list][a]%text:floor1%[/a][/list]
 
-[b]Персона №2[/b]
+[b]ПЕРСОНА №2[/b]
 [list][a]%text:floor2%[/a][/list]
 
-[b]Персона №3[/b]
+[b]ПЕРСОНА №3[/b]
 [list][a]%text:floor3%[/a][/list][/textarea][/background]
