@@ -40,27 +40,13 @@
             <div align="center">ВАРИАНТ ИНЦИДЕНТА</div>
         </span></span></div>
         <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><span style="color: #000000">
-                <table width="100%">
-                    <tbody>
-                        <tr>
-                                <input type="checkbox" class="checkbox" name="accept1" /><span style="font-size: 90%; line-height: 116%;"> УБИЙСТВО</span>
-                            </td>
-                        </tr><br>
-                        <tr>
-                            <input type="checkbox" class="checkbox" name="accept2" /><span style="font-size: 90%; line-height: 116%;"> УНИЧТОЖЕНИЕ ИМУЩЕСТВА</span>
-                        </td><br>
-                        <tr>
-                            <input type="checkbox" class="checkbox" name="accept3" /><span style="font-size: 90%; line-height: 116%;"> ПРИМЕНЕНИЕ ОРУЖИЯ</span>
-                        </td><br>
-                    </tr>
-                    </tr>
-                    </tbody>
-                </table><br>
+            <table width="100%">
                 <tbody>
                     <tr>
-                            <input type="checkbox" class="checkbox" name="accept4" /><span style="font-size: 90%; line-height: 116%;"> С ПОСТРАДАВШИМ ОФИЦЕРОМ</span>
+                        <input type="checkbox" class="checkbox" name="accept4" /><span style="font-size: 90%; line-height: 116%;"> С ПОСТРАДАВШИМ ОФИЦЕРОМ</span>
                         </td>
-                    </tr><br>
+                    </tr>
+                    <br>
                     <tr>
                         <input type="checkbox" class="checkbox" name="accept5" /><span style="font-size: 90%; line-height: 116%;"> С ПОСТРАДАВШИМ ГРАЖДАНСКИМ</span>
                     </td><br></tr>
@@ -74,7 +60,7 @@
                 <table width="100%">
                     <tbody>
                         <tr>
-                            <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Имя пострадавшего:</span><br>
+                            <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Имя, возраст пострадавшего:</span><br>
                                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" oninput="this.value = this.value.toUpperCase()" name="suspect_name" placeholder="Заполнить">
                                 </div>
                             </td>
@@ -93,9 +79,6 @@
                 <table width="100%">
                     <tbody>
                         <tr>
-                            <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата рождения:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" class='datepicker' name="b-day" placeholder="МЕС 11, 2025"/></div>
-                            </td>
                             <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Адрес происшествия: </span><br>
                                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="locate" oninput="this.value = this.value.toUpperCase()" placeholder="Постарайтесь указать точную локацию"/></div>
                             </td>
@@ -127,11 +110,8 @@
                         <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">В результате инцидента кто-то получил ранение?</span><br>
                             <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="300" oninput="this.value = this.value.toUpperCase()" placeholder="Если нет - оставьте пустым"/></div>
                         </td>
-                        <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Требуется ли пострадавшему госпитализация?</span><br>
-                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><select name="medic" style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-                                <option value="Нет">Нет</option>
-                                <option value="Да">Да</option>
-                            </select></div>
+                        <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Информация о госпитализации:</span><br>
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="medic" oninput="this.value = this.value.toUpperCase()" placeholder="Куда был госпитализирован, с какими ранениями"/></div>
                         </td>
                     </tr>
                 </tbody>

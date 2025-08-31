@@ -6,19 +6,17 @@
 [size=80][b]Рапорт об инциденте[/b][/right][/size]
 [hr][/hr]
 [list][box=#0F283E][color=#FFFFFF][center][size=110]ВАРИАНТ ИНЦИДЕНТА[/size][/center][/color][/box]
-[coll3][b] [%text:accept1%] УБИЙСТВО[/b]|[b] [%text:accept2%] УНИЧТОЖЕНИЕ ИМУЩЕСТВА[/b]|[b] [%text:accept3%] ПРИМЕНЕНИЕ ОРУЖИЯ[/b][/coll3]
 [coll][center][b] [%text:accept4%] C ПОСТРАДАВШИМ ОФИЦЕРОМ[/b]|[b] [%text:accept5%] C ПОСТРАДАВШИМ ГРАЖДАНСКИМ[/b][/center][/coll]
 
 [box=#0F283E][color=#FFFFFF][center][size=110]ОСНОВНАЯ ИНФОРМАЦИЯ ОБ ИНЦИДЕНТЕ[/size][/center][/color][/box]
 
-[coll3][b]Имя пострадавшего:[/b]
+[coll3][b]Имя, возраст пострадавшего:[/b]
 [a]%text:suspect_name%[/a]|[b]Мужчина/Женщина:[/b]
 [a]%text:male%[/a]|[b]Номер телефона:[/b]
 [a]%text:tel%[/a][/coll3]
 
-[coll][b]Дата рождения:[/b]
-[a]%text:b-day%[/a]|[b]Адрес:[/b]
-[a]%text:locate%[/a][/coll]
+[b]Адрес, где произошел инцидент:[/b]
+[a]%text:locate%[/a]
 
 [coll][b]Дата инцидента:[/b]
 [a]%text:incident_date%[/a]|[b]Время Инцидента:[/b]
@@ -28,7 +26,7 @@
 [a]%text:incident_description%[/a]
 
 [coll][b]В следствие инцидента кто-то был ранен?:[/b]
-[a]%text:300%[/a]|[b]Требуется ли пострадавшему госпитализация?:[/b]
+[a]%text:300%[/a]|[b]Информация о госпитализации:[/b]
 [a]%text:medic%[/a][/coll]
 
 [coll3][b]Офицер составляющий рапорт:[/b]
