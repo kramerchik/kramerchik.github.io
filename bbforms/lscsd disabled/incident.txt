@@ -11,7 +11,7 @@
 [box=#0F283E][color=#FFFFFF][center][size=110]ОСНОВНАЯ ИНФОРМАЦИЯ ОБ ИНЦИДЕНТЕ[/size][/center][/color][/box]
 
 [coll3][b]Имя, возраст пострадавшего:[/b]
-[a]%text:suspect_name%[/a]|[b]Мужчина/Женщина:[/b]
+[a]%text:suspect_name%[/a]|[b]Пол:[/b]
 [a]%text:male%[/a]|[b]Номер телефона:[/b]
 [a]%text:tel%[/a][/coll3]
 
