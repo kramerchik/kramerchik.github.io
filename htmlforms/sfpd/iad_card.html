@@ -12,7 +12,7 @@
     <script src="/common/js/micromodal.min.js"></script>
     <script src="/common/js/utils.js"></script>
 
-    <title>Генератор личного дела CPD - SFPD</title>
+    <title>Отдел внутренних расследований | NYC-PD.RU</title>
 </head>
 
 <body>
@@ -23,20 +23,20 @@
                     <div align="center">
                     </div>
                     <td style="vertical-align: centered_text; width:100%;  color: rgb(0, 0, 0); ">
-                        <div align="center"><span style="font-weight: bold; font-size: 25px;">ДЕПАРТАМЕНТ ПОЛИЦИИ САН - ФИЕРРО</span><br><span style="font-size: 20px;">ГОРОДСКОЕ КОМАНДОВАНИЕ ПОЛИЦИИ</span> </div>
+                        <div align="center"><span style="font-weight: bold; font-size: 25px;">ДЕПАРТАМЕНТ ПОЛИЦИИ САН - ФИЕРРО</span><br><span style="font-size: 20px;">ОТДЕЛ ВНУТРЕННИХ РАССЛЕДОВАНИЙ</span> </div>
                     </td>
                     <td style="vertical-align: top; width:26%; padding-left:10px;"> <br>
                         <div align="left"><span style="font-size: 85%; line-height: 116%; color: #0F283E;">
                             </span></div>
                     </td>
                     <td style="vertical-align: top; width:26%; padding-right:15px; color: rgb(0, 0, 0);">
-                        <div align="right"> <img src="/favicon.png" height="150" width="150" class="" alt=""><br></div>
+                        <div align="right"> <img src="/img/ovr.png" height="170" width="140" class="" alt=""><br></div>
                     </td>
                 </tr>
             </tbody>
         </table>
         <div style="border-bottom: 1px solid #0F283E; padding: 1px;"></div> <br>
-        <div align="center"><span style=" font-size: 20px;">ЛИЧНОЕ ДЕЛО</span></div><br>
+        <div align="center"><span style=" font-size: 20px;">КАРТОЧКА УЧЁТА ДИСЦИПЛИНАРНЫХ ВЗЫСКАНИЙ</span></div><br>
         <div style="padding: 2px; background-color: #0F283E;"><span><span style="color: #FFFFFF">
                     <div align="center">ОСНОВНАЯ ИНФОРМАЦИЯ</div>
                 </span></span></div>
@@ -45,14 +45,14 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ИМЯ:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" oninput="this.value = this.value.toUpperCase()" name="first_name" placeholder="Заполнить">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" oninput="this.value = this.value.toUpperCase()" name="first_name" placeholder="ЗАПОЛНИТЬ">
                                 </div>
                             </td>
                             <td style="vertical-align: top; width:33%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ВТОРОЕ ИМЯ:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" oninput="this.value = this.value.toUpperCase()" required="" name="two_name" placeholder="Заполнить"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" oninput="this.value = this.value.toUpperCase()" required="" name="two_name" placeholder="ЗАПОЛНИТЬ"/></div>
                             </td>
                             <td style="vertical-align: top; width:33%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ФАМИЛИЯ:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" oninput="this.value = this.value.toUpperCase()" required="" name="surname" placeholder="Заполнить"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" oninput="this.value = this.value.toUpperCase()" required="" name="surname" placeholder="ЗАПОЛНИТЬ"/></div>
                             </td>
                         </tr>
                     </tbody>
@@ -61,7 +61,7 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ДАТА ЗАЧИСЛЕНИЯ:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" class='datepicker' name="date" placeholder="Заполнить">
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" oninput="this.value = this.value.toUpperCase()" required="" name="date" placeholder="МММ ДД, ГГГГ"/>
                                 </div>
                             </td>
                             <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ЗВАНИЕ:</span><br>
@@ -72,30 +72,15 @@
                                     <option value="ОФИЦЕР ПОЛИЦИИ ВТОРОЙ КВАЛИФИКАЦИИ">Police Officer Q2</option>
                                     <option value="ОФИЦЕР ПОЛИЦИИ ТРЕТЬЕЙ КВАЛИФИКАЦИИ">Police Officer Q3</option>
                                     <option value="ОФИЦЕР ПОЛИЦИИ ЧЕТВЕРТОЙ КВАЛИФИКАЦИИ">Police Officer Q4</option>
+                                    <option value="АССИСТЕНТ ИНСПЕКТОРА ПОЛИЦИИ">Assistant Inspector</option>
+                                    <option value="ИНСПЕКТОР ПОЛИЦИИ">Police Inspector</option>
                                     <option value="СЕРЖАНТ ПОЛИЦИИ">Police Sergeant</option>
                                     <option value="ЛЕЙТЕНАНТ ПОЛИЦИИ">Lieutenant</option>
                                     <option value="КАПИТАН ПОЛИЦИИ">Captain</option>
                                 </select>
                             </td>
-                            <td style="vertical-align: top; width:33%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ДОЛЖНОСТЬ:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-                                    <input type="text" name="justification" list="justification" placeholder="Выбрать или заполнить" />
-                                    <datalist id="justification">
-                                        <option value="ОФИЦЕР ПРОГРАММЫ РЕЗЕРВА"></option>
-                                        <option value="ПАТРУЛЬНЫЙ ОФИЦЕР НА СТАЖИРОВКЕ">
-                                        <option value="ПАТРУЛЬНЫЙ ОФИЦЕР НА ИСПЫТАТЕЛЬНОМ СРОКЕ">
-                                        <option value="ПАТРУЛЬНЫЙ ОФИЦЕР">
-                                        <option value="ОФИЦЕР ПОЛЕВОЙ ПОДГОТОВКИ">
-                                        <option value="СТАРШИЙ ОФИЦЕР ПОЛЕВОЙ ПОДГОТОВКИ">
-                                        <option value="КООРДИНАТОР ПРОГРАММЫ ПОЛЕВОЙ ПОДГОТОВКИ">
-                                        <option value="СТАРШИЙ ОФИЦЕР ПАТРУЛЬНОЙ СМЕНЫ A">
-                                        <option value="СТАРШИЙ ОФИЦЕР ПАТРУЛЬНОЙ СМЕНЫ B">
-                                        <option value="СУПЕРВАЙЗЕР ПАТРУЛЬНОЙ СМЕНЫ A">
-                                        <option value="СУПЕРВАЙЗЕР ПАТРУЛЬНОЙ СМЕНЫ B">
-                                        <option value="КОМАНДИР ПАТРУЛЬНОГО ДИВИЗИОНА">
-                                        <option value="КОМАНДИР СТАНЦИИ ГАРВЕР">
-                                    </datalist>
-                                </div>
+                            <td style="vertical-align: top; width:33%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">НОМЕР ЖЕТОНА:</span><br>
+                                  <input type="number" id="jeton" name="number" min="1000" max="9999" value="1000"/>
                             </td>
                         </tr>
                     </tbody>
@@ -109,7 +94,20 @@
             <table width="100%">
                 <tbody>
                     <tr>
-                        <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">АДРЕС ПРОЖИВАНИЯ:</span><br>
+                        <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ССЫЛКА НА ВКОНТАКТЕ:</span><br>
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" oninput="this.value = this.value.toUpperCase()" name="vk" placeholder="https://vk.com/id...">
+                            </div>
+                        </td>
+                        <td style="vertical-align: top; width:33%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ЛИЧНОЕ ДЕЛО ОФИЦЕРА:</span><br>
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" oninput="this.value = this.value.toUpperCase()" required="" name="delo_cpd" placeholder="https://sfpd.nyc-pd.ru/..."/></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table><br>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ДОЛЖНОСТЬ И ПОДРАЗДЕЛЕНИЕ:</span><br>
                             <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" oninput="this.value = this.value.toUpperCase()" name="adress" placeholder="Заполнить">
                             </div>
                         </td>
@@ -126,7 +124,16 @@
                     </tr>
                 </tbody>
             </table>
-        </div></div>
+            
+        </div><br>
+        <div style="padding: 2px; background-color: #0F283E;"><span><span style="color: #FFFFFF">
+                    <div align="center">АНАЛИТИЧЕСКАЯ ЗАПИСКА ОВР</div>
+                </span></span></div>
+        <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><span style="color: #000000">
+            <textarea name="incident_description" placeholder="Вписывается аналитическая сводка о персоне от следователя Отдела внутренних расследований. Опишите краткую характеристику офицера, укажите, нужен ли за ним особый контроль." cols="78"></textarea>
+        </div>
+    
+    </div>
         
 
     <div class="btn-container">
