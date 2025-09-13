@@ -1,0 +1,27 @@
+[box=#0F283E][textarea][float=right][image=170]https://www.upload.ee/image/16052073/____________2023-12-14_201535302.png[/image][image=100]https://www.upload.ee/image/17636025/iadorbi.png[/image][/float][color=white]1
+1[/color]
+[center][size=150][b]ДЕПАРТАМЕНТ ПОЛИЦИИ САН-ФИЕРРО[/b][/size]
+[size=130]ОТДЕЛ ВНУТРЕННИХ РАССЛЕДОВАНИЙ[/size][/center]
+
+[hr][/hr]
+[center][size=120]КАРТОЧКА УЧЁТА ДИСЦИПЛИНАРНЫХ ВЗЫСКАНИЙ[/size][/center]
+
+[border=#0F283E][b]ОСНОВНАЯ ИНФОРМАЦИЯ[/b][/border]
+[list][coll3][b]ИМЯ:[/b]
+[a]%text:first_name%[/a]|[b]ВТОРОЕ ИМЯ:[/b]
+[a]%text:two_name%[/a]|[b]ФАМИЛИЯ:[/b]
+[a]%text:surname%[/a][/coll3]
+[coll3][b]ДАТА ЗАЧИСЛЕНИЯ:[/b]
+[a]%text:date%[/a]|[b]ЗВАНИЕ:[/b]
+[a]%text:rang%[/a]|[b]НОМЕР ЖЕТОНА:[/b]
+[a]%text:id%[/a][/coll3][/list]
+
+[border=#0F283E][b]ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ[/b][/border]
+[list][b]ДОЛЖНОСТЬ И ПОДРАЗДЕЛЕНИЕ:[/b]
+[a][url=%text:delo_cpd%]%text:adress%[/url][/a]
+[b]КОНТАКТНЫЙ НОМЕР ТЕЛЕФОНА:[/b]
+[a][url=%text:vk%]%text:number%[/url][/a][/list]
+
+
+[border=#0F283E][b]АНАЛИТИЧЕСКАЯ ЗАПИСКА ОВР[/b][/border]
+[list][a]%text:incident_description%[/a][/list][/textarea][/box]
