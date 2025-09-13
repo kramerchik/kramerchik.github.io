@@ -80,7 +80,7 @@
                                 </select>
                             </td>
                             <td style="vertical-align: top; width:33%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">НОМЕР ЖЕТОНА:</span><br>
-                                  <input type="number" id="jeton" name="number" min="1000" max="9999" value="1000"/>
+                                  <input type="number" name="id" min="1000" max="9999" value="1000"/>
                             </td>
                         </tr>
                     </tbody>
@@ -95,11 +95,11 @@
                 <tbody>
                     <tr>
                         <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ССЫЛКА НА ВКОНТАКТЕ:</span><br>
-                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" oninput="this.value = this.value.toUpperCase()" name="vk" placeholder="https://vk.com/id...">
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="vk" placeholder="https://vk.com/id...">
                             </div>
                         </td>
                         <td style="vertical-align: top; width:33%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ЛИЧНОЕ ДЕЛО ОФИЦЕРА:</span><br>
-                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" oninput="this.value = this.value.toUpperCase()" required="" name="delo_cpd" placeholder="https://sfpd.nyc-pd.ru/..."/></div>
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" required="" name="delo_cpd" placeholder="https://sfpd.nyc-pd.ru/..."/></div>
                         </td>
                     </tr>
                 </tbody>
@@ -118,7 +118,7 @@
                 <tbody>
                     <tr>
                         <td style="vertical-align: top; width:33%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">КОНТАКТНЫЙ НОМЕР ТЕЛЕФОНА:</span><br>
-                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="phone" oninput="this.value = this.value.toUpperCase()" placeholder="+1 (583) XX-XXXXXX">
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right:10px"><input type="text" name="number" oninput="this.value = this.value.toUpperCase()" placeholder="+1 (583) XX-XXXXXX">
                             </div>
                         </td>
                     </tr>
@@ -179,7 +179,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-            <button type="button" class="btn btn-primary" onclick="window.open('https://sfpd.nyc-pd.ru/viewforum.php?f=78')">На форум</button>
+            <button type="button" class="btn btn-primary" onclick="window.open('https://sfpd.nyc-pd.ru/posting.php?mode=post&f=216')">На форум</button>
           </div>
         </div>
       </div>
@@ -191,7 +191,7 @@
         }
 
         MicroModal.init();
-        window.__bbcodeurl = '/bbforms/lscsd disabled/delo_cpd.txt';
+        window.__bbcodeurl = '/bbforms/lscsd disabled/iad_card.txt';
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
