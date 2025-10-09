@@ -14,7 +14,72 @@
 
     <title>Программа возвращения домой - SFPD</title>
 </head>
+<style>
+.emergency__number {
+    background-color: #fff;
+    color: #0f2940;
+    padding: 1px 3px;
+    font-weight: 700;
+    text-align: center;
+    margin-right: 2px;
+    border-radius: 6px;
+}
+.unitify {
+    background-color: #fff;
+    color: #F08080;
+    padding: 1px 3px;
+    font-weight: 700;
+    text-align: center;
+    margin-right: 2px;
+    border-radius: 6px;
+}
 
+.nav-link.text-dark.font-weight-medium:hover {
+    text-decoration: underline;
+    text-underline-position: under; /* подчёркивание снизу */
+    border-bottom: 2px #0F283E;
+}
+
+</style>
+    <body>
+        
+        <nav class="topbar d-flex justify-content-between align-items-center px-3" style="background-color: #1c2d55; height: 40px;">
+        <div class="d-flex align-items-center text-white font-weight-bold">
+            <img src="https://www.upload.ee/image/16078694/sfcitylogo2color.png" height="30" width="30" class="mr-2" alt="Герб">
+            САН-ФИЕРРО
+        </div>
+        <div class="text-white font-weight" style="font-size: 0.9rem;">
+            Для экстренных ситуаций <span class="emergency__number">911</span>
+        </div>
+        </nav>
+
+
+        <nav class="navbar navbar-expand-lg shadow-sm mb-3 mb-md-4 mb-lg-5" style="background-color: rgb(233, 231, 231);">
+            <div class="container">
+                <a href="/" class="navbar-brand d-flex align-items-center text-dark font-weight-bold">  
+                    <img src="\htmlforms\lspd disabled\sfpd_logo.png" height="50" width="42" alt="" style="margin-right: 10px;">
+                    <span>Департамент полиции Сан-Фиерро</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link text-dark font-weight-medium" href="/lscsd.html">Офицерам <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark font-weight-medium" href="/civil.html">Гражданским</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark font-weight-medium" href="/IAD_enter.html">Инспекторам ОВР</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 <body>
     <div class="form" style="border: 1px solid #0F283E; padding: 10px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
         <table width="100%">
@@ -23,7 +88,7 @@
                     <div align="center">
                     </div>
                     <td style="vertical-align: centered_text; width:100%;  color: rgb(0, 0, 0); ">
-                        <div align="center"><span style="font-weight: bold; font-size: 25px;">ДЕПАРТАМЕНТ ПОЛИЦИИ САН - ФИЕРРО</span><br><span style="font-size: 20px;">ПРОГРАММА ВОЗВРАЩЕНИЯ ДОМОЙ</span> </div>
+                        <div align="center"><span style="font-weight: bold; font-size: 25px;">ДЕПАРТАМЕНТ ПОЛИЦИИ САН - ФИЕРРО</span><br><span style="font-size: 20px;">ПРОГРАММА ПЕРЕВОДА</span> </div>
                     </td>
                     <td style="vertical-align: top; width:26%; padding-left:10px;"> <br>
                         <div align="left"><span style="font-size: 85%; line-height: 116%; color: #0F283E;">
@@ -156,7 +221,7 @@
 
     <div class="btn-container">
         <button class="modal__btn modal__btn-primary" onclick="showBB()">Generate</button>
-        <button class="modal__btn" onclick="window.location.assign('/')">Back</button>
+        <button class="modal__btn" onclick="window.location.assign('/civil.html')">Back</button>
     </div>
 
     <!-- Modal -->
@@ -205,8 +270,8 @@
     <script>
         function generatePostTitle() {
             var nickname = document.getElementsByName("nickname")[0].value.toUpperCase();
-            var h_output = "[BACKHOME] " + document.getElementsByName("nickname")[0].innerText;
-            h_output = "[BACKHOME] " + nickname;
+            var h_output = "[ПЕРЕВОД] " + document.getElementsByName("nickname")[0].innerText;
+            h_output = "[ПЕРЕВОД] " + nickname;
             return h_output;
         }
         function form2dict(form) {
@@ -226,7 +291,7 @@
         }
 
         MicroModal.init();
-        window.__bbcodeurl = '/bbforms/lscsd disabled/back_home.txt';
+        window.__bbcodeurl = '/bbforms/lscsd disabled/transfer.txt';
         document.querySelector('[name="name"]').focus();   
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

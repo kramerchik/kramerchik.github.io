@@ -12,21 +12,81 @@
     <script src="/common/js/micromodal.min.js"></script>
     <script src="/common/js/utils.js"></script>
 
-    <title>Рапорт об инциденте | NYC-PD.RU</title>
+    <title>Рапорт об инциденте | SFPD</title>
 </head>
-<meta http-equiv="refresh" content="0; URL='/tech.html'" />
+<style>
+.emergency__number {
+    background-color: #fff;
+    color: #0f2940;
+    padding: 1px 3px;
+    font-weight: 700;
+    text-align: center;
+    margin-right: 2px;
+    border-radius: 6px;
+}
+.unitify {
+    background-color: #fff;
+    color: #F08080;
+    padding: 1px 3px;
+    font-weight: 700;
+    text-align: center;
+    margin-right: 2px;
+    border-radius: 6px;
+}
+
+.nav-link.text-dark.font-weight-medium:hover {
+    text-decoration: underline;
+    text-underline-position: under; /* подчёркивание снизу */
+    border-bottom: 2px #0F283E;
+}
+
+</style>
+    <body>
+        
+        <nav class="topbar d-flex justify-content-between align-items-center px-3" style="background-color: #1c2d55; height: 40px;">
+        <div class="d-flex align-items-center text-white font-weight-bold">
+            <img src="https://www.upload.ee/image/16078694/sfcitylogo2color.png" height="30" width="30" class="mr-2" alt="Герб">
+            САН-ФИЕРРО
+        </div>
+        <div class="text-white font-weight" style="font-size: 0.9rem;">
+            Для экстренных ситуаций <span class="emergency__number">911</span>
+        </div>
+        </nav>
+
+
+        <nav class="navbar navbar-expand-lg shadow-sm mb-3 mb-md-4 mb-lg-5" style="background-color: rgb(233, 231, 231);">
+            <div class="container">
+                <a href="/" class="navbar-brand d-flex align-items-center text-dark font-weight-bold">  
+                    <img src="\htmlforms\lspd disabled\sfpd_logo.png" height="50" width="42" alt="" style="margin-right: 10px;">
+                    <span>Департамент полиции Сан-Фиерро</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link text-dark font-weight-medium" href="/lscsd.html">Офицерам <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark font-weight-medium" href="/civil.html">Гражданским</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark font-weight-medium" href="/IAD_enter.html">Инспекторам ОВР</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
 <body>
     <div class="form" style="border: 1px solid #0F283E; padding: 10px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
         <table width="100%">
             <tbody>
-                <tr>
-                    <td style="vertical-align: top; width:26%; padding-right:15px; color: rgb(0, 0, 0);">
-                        <div align="left"> <img src="/htmlforms/lspd disabled/sfpd_logo.png" height="170" width="150" class="" alt=""><br></div>
-                    </td>
-                    <div align="center">
-                    </div>
                     <td style="vertical-align: centered_text; width:100%;  color: rgb(0, 0, 0); ">
-                        <div align="right"><span style="font-size: 20px;">Станция Гарвер<br>База данных происшествий<br><span style="font-weight: bold; font-size: 25px;">Рапорт об инциденте</span> </span> </div>
+                        <div align="center"><span style="font-size: 20px;">База данных происшествий<br><span style="font-weight: bold; font-size: 25px;">Отчёт об инциденте</span> </span> </div>
                     </td>
                     <td style="vertical-align: top; width:26%; padding-left:10px;"> <br>
                         <div align="right"><span style="font-size: 85%; line-height: 116%; color: #0F283E;">
@@ -34,24 +94,26 @@
                     </td>
                 </tr>
             </tbody>
-        </table>
+        </table><br>
         <div style="border-bottom: 1px solid #0F283E; padding: 1px;"></div> <br>
         <div style="padding: 2px; background-color: #0F283E;"><span><span style="color: #FFFFFF">
-            <div align="center">ВАРИАНТ ИНЦИДЕНТА</div>
+            <div align="center">СТАТУС ИНЦИДЕНТА</div>
         </span></span></div>
         <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><span style="color: #000000">
             <table width="100%">
                 <tbody>
-                    <tr>
-                        <input type="checkbox" class="checkbox" name="accept4" /><span style="font-size: 90%; line-height: 116%;"> С ПОСТРАДАВШИМ ОФИЦЕРОМ</span>
+                    <tr style="text-align: center;">
+                        <td style="padding: 0 15px;">
+                            <input type="checkbox" class="checkbox" name="accept4" />
+                            <span style="font-size: 90%; line-height: 116%;">Пострадал полицейский</span>
+                        </td>
+                        <td style="padding: 0 15px;">
+                            <input type="checkbox" class="checkbox" name="accept5" />
+                            <span style="font-size: 90%; line-height: 116%;">Пострадало гражданское лицо</span>
                         </td>
                     </tr>
-                    <br>
-                    <tr>
-                        <input type="checkbox" class="checkbox" name="accept5" /><span style="font-size: 90%; line-height: 116%;"> С ПОСТРАДАВШИМ ГРАЖДАНСКИМ</span>
-                    </td><br></tr>
                 </tbody>
-            </table>
+            </table><br>
         </div><br>
         <div style="padding: 2px; background-color: #0F283E;"><span><span style="color: #FFFFFF">
                     <div align="center">ОСНОВНАЯ ИНФОРМАЦИЯ ОБ ИНЦИДЕНТЕ</div>
@@ -76,23 +138,17 @@
                         </tr>
                     </tbody>
                 </table><br>
-                <table width="100%">
-                    <tbody>
-                        <tr>
-                            <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Адрес происшествия: </span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="locate" oninput="this.value = this.value.toUpperCase()" placeholder="Постарайтесь указать точную локацию"/></div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table> <br>
+                <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Адрес происшествия: </span><br>
+                    <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="locate" oninput="this.value = this.value.toUpperCase()" placeholder="Район, улица, дом, квартира"/></div>
+                </td> <br>
                 <table width="100%">
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата инцидента:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" required="" class="datepicker" name="incident_date" placeholder="ДАТА ИНЦИДЕНТА"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" required="" class="datepicker" name="incident_date" placeholder="Нажмите, чтобы выбрать"/></div>
                             </td>
                             <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Время инцидента:</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="time" name="time" oninput="this.value = this.value.toUpperCase()" placeholder="Постарайтесь указать точную локацию"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="time" name="time" oninput="this.value = this.value.toUpperCase()"/></div>
                             </td>
                         </tr>
                     </tbody>
@@ -104,6 +160,8 @@
             </span></span></div>
         </span></span>
             <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 10px"><textarea name="incident_description" placeholder="Полное, подробное описание ситуации" cols="78"></textarea></div> 
+
+
             <table width="100%">
                 <tbody>
                     <tr>
