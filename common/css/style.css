@@ -662,15 +662,6 @@ details{
   margin-bottom: .5rem;
 }
 
-.emergency__number {
-    background-color: #fff;
-    color: #0f2940;
-    padding: 1px 3px;
-    font-weight: 700;
-    text-align: center;
-    margin-right: 2px;
-    border-radius: 6px;
-}
 .unitify {
     background-color: #fff;
     color: #F08080;
@@ -686,3 +677,251 @@ details{
     text-underline-position: under; /* подчёркивание снизу */
     border-bottom: 2px #0F283E;
 }
+
+    :root {
+        --sfpd-blue-dark: #0f283e;
+        --sfpd-blue-light: #1c2d55;
+        --sfpd-gold: #d4af37;
+        --sfpd-white: #ffffff;
+    }
+    
+    .sfpd-header {
+        font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    }
+    
+    .topbar {
+        background: linear-gradient(90deg, var(--sfpd-blue-dark) 0%, var(--sfpd-blue-light) 100%);
+        height: 45px;
+        border-bottom: 2px solid var(--sfpd-gold);
+    }
+    
+    .emergency__number {
+        background-color: #c10000;
+        color: white;
+        font-weight: 900;
+        padding: 4px 12px;
+        border-radius: 20px;
+        margin-left: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+    
+    .emergency__number:hover {
+        background-color: #e60000;
+        transform: scale(1.05);
+        transition: all 0.2s ease;
+    }
+    
+    .navbar-main {
+        background-color: var(--sfpd-white) !important;
+        border-bottom: 3px solid var(--sfpd-gold);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .sfpd-brand {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    
+    .logo-container {
+        position: relative;
+        margin-right: 20px;
+    }
+    
+    .sfpd-logo {
+        height: 70px;
+        width: auto;
+        filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+        z-index: 100;
+        position: relative;
+    }
+    
+    .logo-badge {
+        position: absolute;
+        top: -10px;
+        left: -5px;
+        background: var(--sfpd-blue-light);
+        color: white;
+        font-size: 0.7rem;
+        padding: 2px 8px;
+        border-radius: 10px;
+        font-weight: bold;
+        transform: rotate(-15deg);
+    }
+    
+    .department-name {
+        color: var(--sfpd-blue-dark) !important;
+        font-weight: 700;
+        font-size: 1.4rem;
+        letter-spacing: 0.5px;
+        margin-left: 10px;
+        border-left: 2px solid var(--sfpd-gold);
+        padding-left: 15px;
+        line-height: 1.2;
+    }
+    
+    .department-name span {
+        display: block;
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: #666;
+        margin-top: 4px;
+    }
+    
+    .sfpd-nav-link {
+        color: var(--sfpd-blue-dark) !important;
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 8px 20px !important;
+        margin: 0 5px;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+    }
+    
+    .sfpd-nav-link:hover {
+        background-color: var(--sfpd-blue-light);
+        color: white !important;
+        transform: translateY(-2px);
+    }
+    
+    .sfpd-nav-link.active {
+        background-color: var(--sfpd-blue-dark);
+        color: white !important;
+        position: relative;
+    }
+    
+    .sfpd-nav-link.active::after {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 20px;
+        right: 20px;
+        height: 3px;
+        background-color: var(--sfpd-gold);
+    }
+    
+    .navbar-toggler {
+        border: 2px solid var(--sfpd-blue-dark);
+        padding: 6px 10px;
+    }
+    
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 2px var(--sfpd-gold);
+    }
+    .emergency__number {
+        background-color: #fff;
+        color: #0f2940;
+        padding: 1px 3px;
+        font-weight: 700;
+        text-align: center;
+        margin-right: 2px;
+        border-radius: 6px;
+    }
+    
+    /* Мобильная адаптация */
+/* Исправления для мобильной версии */
+@media (max-width: 991.98px) {
+    /* Увеличиваем контрастность верхней панели */
+    .topbar {
+        height: 40px;
+        padding: 0 15px;
+    }
+    
+    .topbar > div:first-child small {
+        font-size: 0.75rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 150px;
+    }
+    
+    .topbar > div:last-child {
+        font-size: 0.8rem;
+    }
+    
+    .emergency__number {
+        padding: 3px 10px;
+        font-size: 1rem;
+    }
+    
+    /* Логотип и бренд */
+    .sfpd-logo {
+        height: 50px !important;
+    }
+    
+    .logo-badge {
+        top: -8px;
+        left: -4px;
+        font-size: 0.6rem;
+        padding: 1px 6px;
+    }
+    
+    .department-name {
+        font-size: 1rem !important;
+        margin-left: 5px;
+        padding-left: 10px;
+    }
+    
+    .department-name span {
+        font-size: 0.75rem;
+    }
+    
+    /* Кнопка навигации - ЧЁРНАЯ и видимая */
+    .navbar-toggler {
+        border: 2px solid #000000 !important;
+        background-color: #ffffff !important;
+        padding: 8px 12px !important;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        margin-left: auto;
+    }
+    
+    /* Гамбургер-иконка черного цвета */
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+        width: 24px;
+        height: 24px;
+    }
+    
+    /* При нажатии/фокусе */
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 3px var(--sfpd-gold) !important;
+        outline: none;
+    }
+    
+    .navbar-toggler:hover {
+        background-color: #000000 !important;
+    }
+    
+    .navbar-toggler:hover .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    }
+    
+    /* Контейнер навигации */
+    .navbar-collapse {
+        background-color: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        margin-top: 15px;
+        border: 1px solid #e0e0e0;
+    }
+    
+    .sfpd-nav-link {
+        margin: 8px 0;
+        padding: 12px 15px !important;
+        border-left: 4px solid transparent;
+    }
+    
+    .sfpd-nav-link.active {
+        border-left: 4px solid var(--sfpd-gold);
+    }
+    
+    .sfpd-nav-link.active::after {
+        display: none;
+    }
+}
+    
