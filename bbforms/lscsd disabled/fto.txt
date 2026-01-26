@@ -7,7 +7,7 @@
 [size=110][b]ХАРАКТЕРИСТИКА О КАНДИДАТЕ[/b][/size]
 [hr][/hr]
 [background=#FFFFFF][coll3][b]ИМЯ:[/b][a]%text:first_name%[/a]|[b]ФАМИЛИЯ:[/b][a]%text:surname%[/a]|[b]ВТОРОЕ ИМЯ:[/b][a]%text:two_name%[/a][/coll3][/background]
-[background=#FFFFFF][coll3][b]ОПЫТ РАБОТЫ В ОТДЕЛЕ:[/b][a]%text:time%[/a]|[b]ЗВАНИЕ:[/b][a]%text:rang%[/a]|[b]ПОЛУЧЕННЫЕ НАГРАДЫ:[/b][a]%text:rang%[/a][/coll3][/background]
+[background=#FFFFFF][coll3][b]ОПЫТ РАБОТЫ В ОТДЕЛЕ:[/b][a]%text:time%[/a]|[b]ЗВАНИЕ:[/b][a]%text:rang%[/a]|[b]ПОЛУЧЕННЫЕ НАГРАДЫ:[/b][a]%text:medals%[/a][/coll3][/background]
 
 
 [size=110][b]ХАРАКТЕРИСТИКА РУКОВОДИТЕЛЯ ПОДРАЗДЕЛЕНИЯ[/b][/size]
