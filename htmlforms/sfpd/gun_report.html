@@ -309,8 +309,22 @@
             var author = document.getElementsByName("author")[0].value.toUpperCase();
             var DGO = document.getElementsByName("DGO")[0].value.toUpperCase();
             var date = document.getElementsByName("date")[0].value.toUpperCase();
-            var h_output = "[ПРИМЕНЕНИЕ СИЛЫ] " + document.getElementsByName("author") + " | " + document.getElementsByName("DGO")[0].innerText + " | " + document.getElementsByName("date")[0].innerText;
-            h_output = "[ПРИМЕНЕНИЕ СИЛЫ] " + author + " | " + DGO + " | " + date;
+            
+            // Получаем текущую дату и время в московском часовом поясе
+            var now = new Date();
+            var moscowTime = new Date(now.toLocaleString('en-US', { timeZone: 'Europe/Moscow' }));
+            
+            // Формируем номер: # + последняя цифра года + пробел + дата и месяц (две цифры) + пробел + время (часы и минуты)
+            var year = moscowTime.getFullYear().toString().slice(-1); // последняя цифра года
+            var day = moscowTime.getDate().toString().padStart(2, '0');
+            var month = (moscowTime.getMonth() + 1).toString().padStart(2, '0'); // месяцы от 0 до 11
+            var hours = moscowTime.getHours().toString().padStart(2, '0');
+            var minutes = moscowTime.getMinutes().toString().padStart(2, '0');
+            
+            var number = '#' + year + ' ' + day + month + ' ' + hours + minutes;
+            
+            var h_output = "[ПРИМЕНЕНИЕ СИЛЫ] " + author + " | " + DGO + " | " + date + " " + number;
+            
             return h_output;
         }
 
