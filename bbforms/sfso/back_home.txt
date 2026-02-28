@@ -1,5 +1,5 @@
-﻿[background=#0F283E][textarea][float=right][image=100]https://www.upload.ee/image/18646435/patchtext.png[/image][image=100]https://www.upload.ee/image/18646433/citylogo.png[/image][/float]
-[center][size=150][b]СТОЛИЧНОЕ ПОЛИЦЕЙСКОЕ УПРАВЛЕНИЕ ЛАС-ВЕНТУРАСА[/b][/size]
+﻿[background=#112f25][textarea][float=right][image=105]https://i.ibb.co/jvS1zBQn/sfso.png[/image][image=100]https://www.upload.ee/image/16052149/____________2023-12-14_203606471.png[/image][/float]
+[center][size=150][b]ОФИС ШЕРИФА САН-ФИЕРРО[/b][/size]
 [size=130]ПРОГРАММА ВОЗВРАЩЕНИЯ ДОМОЙ[/size][/center]
 
 [hr][/hr]
@@ -27,4 +27,4 @@
 
 [b][%text:checkbox%] Я принимаю условия данного заявления.[/b]
 [size=85][i](Отметить X)[/i][/size][/list][/list]
-[color=white]LVMPD/NYC-PD with kramerchik.forms[/color][/textarea][/background]
+[color=white]SFSO/NYC-PD with kramerchik.forms[/color][/textarea][/background]
