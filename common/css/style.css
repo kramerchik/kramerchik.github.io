@@ -683,7 +683,7 @@ details{
         --sfpd-blue-light: #1c2d55;
         --sfpd-gold: #d4af37;
         --sfpd-white: #ffffff;
-        --sfso-green: #112f25
+        --sfso-green: #112f25;
     }
     
     .sfpd-header {
@@ -715,6 +715,25 @@ details{
     
     .emergency__number:hover {
         background-color: #e60000;
+        transform: scale(1.05);
+        transition: all 0.2s ease;
+    }
+
+    .emergency_number {
+    background-color: #ccb078;  /* Основной золотистый цвет */
+    color: #0a1433;  /* Тёмно-синий цвет фона */
+    font-weight: 900;
+    padding: 2px 10px;
+    border-radius: 20px;
+    margin-left: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    }
+
+    .emergency_number:hover {
+        background-color: #ffd700;  /* Ярко-золотой при наведении */
+        color: #0a1433;
         transform: scale(1.05);
         transition: all 0.2s ease;
     }
@@ -777,6 +796,24 @@ details{
         color: #666;
         margin-top: 4px;
     }
+    .sodepartment-name {
+        color: var(--sfso-green) !important;
+        font-weight: 700;
+        font-size: 1.4rem;
+        letter-spacing: 0.5px;
+        margin-left: 10px;
+        border-left: 2px solid var(--sfpd-gold);
+        padding-left: 15px;
+        line-height: 1.2;
+    }
+    
+    .sodepartment-name span {
+        display: block;
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: #666;
+        margin-top: 4px;
+    }
     
     .sfpd-nav-link {
         color: var(--sfpd-blue-dark) !important;
@@ -798,6 +835,30 @@ details{
         background-color: var(--sfpd-blue-dark);
         color: white !important;
         position: relative;
+    }
+    .sfso-nav-link {
+        color: var(--sfso-green) !important;
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 8px 20px !important;
+        margin: 0 5px;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+    }
+    .sfso-nav-link.active {
+        background-color: var(--sfso-green);
+        color: white !important;
+        position: relative;
+    }
+
+    .sfso-nav-link.active::after {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 20px;
+        right: 20px;
+        height: 3px;
+        background-color: var(--sfpd-gold);
     }
     
     .sfpd-nav-link.active::after {
