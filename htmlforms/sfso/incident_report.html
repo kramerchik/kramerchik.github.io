@@ -13,19 +13,19 @@
     <script src="/common/js/utils.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <title>Рапорт об инциденте | SFPD</title>
+    <title>Рапорт об инциденте | SFSO</title>
 </head>
 <style>
 
 </style>
     <body>
         
-<header class="sfpd-header">
-    <nav class="topbar d-flex justify-content-between align-items-center px-3 px-md-4">
-        <div class="d-flex align-items-center text-white">
+<header class="sfso-header">
+    <nav class="topbarSFSO d-flex justify-content-between align-items-center px-3 px-md-4">
+        <a href="/index.html" class="d-flex align-items-center text-white" style="text-decoration: none;">
             <img src="https://www.upload.ee/image/16078694/sfcitylogo2color.png" height="25" width="25" class="mr-2" alt="Герб">
             <b>САН-ФИЕРРО</b>
-        </div>
+        </a>
         <div class="d-flex align-items-center text-white" style="font-size: 0.9rem;">
             <i class="fas fa-phone-alt mr-2"></i>
             Для экстренных ситуаций: 
@@ -38,12 +38,12 @@
         <div class="container position-relative">
             <!-- Логотип, перекрывающий оба навбара -->
             <div class="logo-container">
-                <img src="\htmlforms\lspd disabled\sfpd_logo.png" class="sfpd-logo" alt="Логотип SFPD">
+                <img src="/img/SFSO/patch.png" class="sfpd-logo" alt="Логотип SFSO">
             </div>
             
-            <a href="/" class="navbar-brand sfpd-brand">
-                <div class="department-name">
-                    Департамент полиции Сан-Фиерро
+            <a href="/sfso.html" class="navbar-brand sfpd-brand">
+                <div class="sodepartment-name">
+                    Офис шерифа города-округа Сан-Фиерро
                     <span><i>Oro en paz, fierro en guerra</i></span>
                 </div>
             </a>
@@ -56,21 +56,15 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link sfpd-nav-link active" href="/lscsd.html">
+                        <a class="nav-link sfso-nav-link" href="/sfso.html">
                             <i class="fas fa-shield-alt mr-2"></i>
-                            Офицерам
+                            Полицейским
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link sfpd-nav-link" href="/civil.html">
+                        <a class="nav-link sfso-nav-link active" href="/htmlforms/sfso/civil.html">
                             <i class="fas fa-users mr-2"></i>
                             Гражданам
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link sfpd-nav-link" href="/IAD_enter.html">
-                            <i class="fas fa-file-invoice"></i>
-                            Инспекторам ОВР
                         </a>
                     </li>
                 </ul>
@@ -80,21 +74,21 @@
 </header><br>
 
 <body>
-    <div class="form" style="border: 1px solid #0F283E; padding: 10px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+    <div class="form" style="border: 1px solid #112f25; padding: 10px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
         <table width="100%">
             <tbody>
                     <td style="vertical-align: centered_text; width:100%;  color: rgb(0, 0, 0); ">
                         <div align="center"><span style="font-size: 20px;">База данных происшествий<br><span style="font-weight: bold; font-size: 25px;">Отчёт об инциденте</span> </span> </div>
                     </td>
                     <td style="vertical-align: top; width:26%; padding-left:10px;"> <br>
-                        <div align="right"><span style="font-size: 85%; line-height: 116%; color: #0F283E;">
+                        <div align="right"><span style="font-size: 85%; line-height: 116%; color: #112f25;">
                             </span></div>
                     </td>
                 </tr>
             </tbody>
         </table><br>
-        <div style="border-bottom: 1px solid #0F283E; padding: 1px;"></div> <br>
-        <div style="padding: 2px; background-color: #0F283E;"><span><span style="color: #FFFFFF">
+        <div style="border-bottom: 1px solid #112f25; padding: 1px;"></div> <br>
+        <div style="padding: 2px; background-color: #112f25;"><span><span style="color: #FFFFFF">
             <div align="center">СТАТУС ИНЦИДЕНТА</div>
         </span></span></div>
         <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><span style="color: #000000">
@@ -113,7 +107,7 @@
                 </tbody>
             </table><br>
         </div><br>
-        <div style="padding: 2px; background-color: #0F283E;"><span><span style="color: #FFFFFF">
+        <div style="padding: 2px; background-color: #112f25;"><span><span style="color: #FFFFFF">
                     <div align="center">ОСНОВНАЯ ИНФОРМАЦИЯ ОБ ИНЦИДЕНТЕ</div>
                 </span></span></div>
         <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><span style="color: #000000">
@@ -153,7 +147,7 @@
                 </table> 
         </div><br>
         
-        <div style="padding: 2px; background-color: #0F283E;"><span><span style="color: #FFFFFF">
+        <div style="padding: 2px; background-color: #112f25;"><span><span style="color: #FFFFFF">
                 <div align="center">ОПИСАНИЕ СИТУАЦИИ</div>
             </span></span></div>
         </span></span>
@@ -193,7 +187,7 @@
 
     <div class="btn-container">
         <button class="modal__btn modal__btn-primary" onclick="showBB()">Сгенерировать</button>
-        <button class="modal__btn" onclick="window.location.assign('/sfpd.html')">Назад</button>
+        <button class="modal__btn" onclick="window.location.assign('/sfso.html')">Назад</button>
     </div>
 
     <!-- Modal -->
@@ -234,7 +228,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-            <button type="button" class="btn btn-primary" onclick="window.open('https://sfpd.nyc-pd.ru/posting.php?mode=post&f=27')">Создать тему</button>
+            <button type="button" class="btn btn-primary" onclick="window.open('https://sfso.nyc-pd.ru/posting.php?mode=post&f=27')">Создать тему</button>
           </div>
         </div>
       </div>
@@ -244,21 +238,7 @@
         function generatePostTitle() {
             var locate = document.getElementsByName("locate")[0].value.toUpperCase();
             var officer = document.getElementsByName("officer")[0].value.toUpperCase();
-            
-            // Получаем текущую дату и время в московском часовом поясе
-            var now = new Date();
-            var moscowTime = new Date(now.toLocaleString('en-US', { timeZone: 'Europe/Moscow' }));
-            
-            // Формируем номер: # + последняя цифра года + пробел + дата и месяц (две цифры) + пробел + время (часы и минуты)
-            var year = moscowTime.getFullYear().toString().slice(-1); // последняя цифра года
-            var day = moscowTime.getDate().toString().padStart(2, '0');
-            var month = (moscowTime.getMonth() + 1).toString().padStart(2, '0'); // месяцы от 0 до 11
-            var hours = moscowTime.getHours().toString().padStart(2, '0');
-            var minutes = moscowTime.getMinutes().toString().padStart(2, '0');
-            
-            var number = '#' + year + ' ' + day + month + ' ' + hours + minutes;
-            
-            var h_output = "[ИНЦИДЕНТ] " + officer + " | " + locate + " " + number;
+            var h_output = "[ИНЦИДЕНТ] " + officer + " | " + locate ;
             
             return h_output;
         }
@@ -299,7 +279,7 @@
         }
 
         MicroModal.init();
-        window.__bbcodeurl = '/bbforms/lscsd disabled/incident.txt';
+        window.__bbcodeurl = '/bbforms/sfso/incident.txt';
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
