@@ -7,7 +7,7 @@
 [center][size=120][b]ЛИЧНОЕ ДЕЛО[/b][/size][/center]
 [coll][list][center][image=500]%text:profilePhoto%[/image][/center]|СПЕЦИАЛЬНОЕ ПОЛИЦЕЙСКОЕ ЗВАНИЕ: [b]%text:justification%[/b]
 
-ДОЛЖНОСТЬ: [b]text:rang%[/b]
+ДОЛЖНОСТЬ: [b]%text:rang%[/b]
 
 НОМЕР НАГРУДНОГО ЖЕТОНА: [b]#%text:number%[/b]
 
