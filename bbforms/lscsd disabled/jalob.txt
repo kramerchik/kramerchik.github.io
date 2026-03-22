@@ -1,8 +1,7 @@
-[textarea][float=left][image=170]https://www.upload.ee/image/16052073/____________2023-12-14_201535302.png[/image][image=120]https://www.upload.ee/image/16052149/____________2023-12-14_203606471.png[/image][/float][color=white]LSPD[/color]
-[size=150][right][b]Департамент полиции Сан-Фиерро[/b][/size]
-[size=90][b]Отдел Внутренних Расследований[/b][/size]
-[size=80][b]Жалоба на офицера[/b][/right][/size]
-
+[textarea][center][image=140]https://kramerchik.github.io/img/dpa_sf.png[/image]
+[size=150][b]Департамент полиции Сан-Фиерро[/b][/size]
+[size=120][b]Департамент по вопросам подотчетности полиции[/b][/size]
+[size=100][b]Жалоба на работу полиции[/b][/center][/size]
 [hr][/hr]
 [list][border=#0F283E][size=120][b]ИНФОРМАЦИЯ О ЗАЯВИТЕЛЕ[/b][/size][/border]
 [list][coll3][b]Имя Фамилия:[/b][a]%text:name%[/a]|[b]Номер мобильного телефона:[/b][a]%text:phone%[/a]|[b]Место проживания:[/b][a]%text:locate%[/a][/coll3][/list][/list]
