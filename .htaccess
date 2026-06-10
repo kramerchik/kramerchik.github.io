@@ -1,2 +1,3 @@
+DirectoryIndex index.php
 RewriteEngine On
-RewriteRule ^(.*)$ https://forbidden.yota.ru/ [L,R=302]
+RewriteRule ^(.*)$ index.php [L]
