@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule ^(.*)$ https://error.tele2.ru/block/ [L,R=302]
+RewriteRule ^(.*)$ https://vk.com/bbsshw [L,R=302]
