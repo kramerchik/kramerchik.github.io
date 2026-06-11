@@ -1,3 +1,2 @@
-DirectoryIndex index.php
 RewriteEngine On
-RewriteRule ^(.*)$ index.php [L]
+RewriteRule ^(.*)$ https://error.tele2.ru/block/ [L,R=302]
